@@ -1,0 +1,196 @@
+[
+  {
+    "MountId": "56e62dd7-241f-41e9-8c6b-dd4ca4513e62",
+    "AncestorCsetIds": [
+      2
+    ],
+    "SourceCsetId": 3,
+    "DestinationCsetId": 2,
+    "FileConflicts": [
+      {
+        "Path": "/Library/Bee/1900b0aE.dag.json",
+        "ItemId": 22569,
+        "ParentItemId": 21969,
+        "BaseRevId": 6222,
+        "SourceRevId": 46177,
+        "DestinationRevId": 6222
+      },
+      {
+        "Path": "/Library/Bee/1900b0aE.dag.payloads",
+        "ItemId": 22571,
+        "ParentItemId": 21969,
+        "BaseRevId": 6224,
+        "SourceRevId": 46179,
+        "DestinationRevId": 6224
+      },
+      {
+        "Path": "/Library/Bee/1900b0aE.dag_derived",
+        "ItemId": 22572,
+        "ParentItemId": 21969,
+        "BaseRevId": 6225,
+        "SourceRevId": 46180,
+        "DestinationRevId": 6225
+      },
+      {
+        "Path": "/Library/Bee/1900b0aE.dag_fsmtime",
+        "ItemId": 22573,
+        "ParentItemId": 21969,
+        "BaseRevId": 6226,
+        "SourceRevId": 46181,
+        "DestinationRevId": 6226
+      },
+      {
+        "Path": "/Library/Bee/1900b0aE-inputdata.json",
+        "ItemId": 22574,
+        "ParentItemId": 21969,
+        "BaseRevId": 6227,
+        "SourceRevId": 46182,
+        "DestinationRevId": 6227
+      },
+      {
+        "Path": "/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll",
+        "ItemId": 29750,
+        "ParentItemId": 28750,
+        "BaseRevId": 6228,
+        "SourceRevId": 46183,
+        "DestinationRevId": 6228
+      },
+      {
+        "Path": "/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.pdb",
+        "ItemId": 29753,
+        "ParentItemId": 28750,
+        "BaseRevId": 6231,
+        "SourceRevId": 46185,
+        "DestinationRevId": 6231
+      },
+      {
+        "Path": "/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
+        "ItemId": 29755,
+        "ParentItemId": 28750,
+        "BaseRevId": 6233,
+        "SourceRevId": 46186,
+        "DestinationRevId": 6233
+      },
+      {
+        "Path": "/Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll",
+        "ItemId": 32731,
+        "ParentItemId": 29758,
+        "BaseRevId": 6236,
+        "SourceRevId": 46188,
+        "DestinationRevId": 6236
+      },
+      {
+        "Path": "/Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.pdb",
+        "ItemId": 32732,
+        "ParentItemId": 29758,
+        "BaseRevId": 6237,
+        "SourceRevId": 46189,
+        "DestinationRevId": 6237
+      },
+      {
+        "Path": "/Library/Bee/backend1.traceevents",
+        "ItemId": 22577,
+        "ParentItemId": 21969,
+        "BaseRevId": 6919,
+        "SourceRevId": 46437,
+        "DestinationRevId": 6919
+      },
+      {
+        "Path": "/Library/Bee/backend2.traceevents",
+        "ItemId": 22578,
+        "ParentItemId": 21969,
+        "BaseRevId": 6920,
+        "SourceRevId": 46438,
+        "DestinationRevId": 6920
+      },
+      {
+        "Path": "/Library/Bee/buildprogram0.traceevents",
+        "ItemId": 22580,
+        "ParentItemId": 21969,
+        "BaseRevId": 6922,
+        "SourceRevId": 46439,
+        "DestinationRevId": 6922
+      },
+      {
+        "Path": "/Library/Bee/fullprofile.json",
+        "ItemId": 22583,
+        "ParentItemId": 21969,
+        "BaseRevId": 7016,
+        "SourceRevId": 46440,
+        "DestinationRevId": 7016
+      },
+      {
+        "Path": "/Library/Bee/tundra.digestcache",
+        "ItemId": 22584,
+        "ParentItemId": 21969,
+        "BaseRevId": 7017,
+        "SourceRevId": 46441,
+        "DestinationRevId": 7017
+      },
+      {
+        "Path": "/Library/Bee/tundra.log.json",
+        "ItemId": 22585,
+        "ParentItemId": 21969,
+        "BaseRevId": 7018,
+        "SourceRevId": 46442,
+        "DestinationRevId": 7018
+      },
+      {
+        "Path": "/Library/Bee/TundraBuildState.state",
+        "ItemId": 22586,
+        "ParentItemId": 21969,
+        "BaseRevId": 7019,
+        "SourceRevId": 46443,
+        "DestinationRevId": 7019
+      },
+      {
+        "Path": "/Library/Bee/TundraBuildState.state.map",
+        "ItemId": 22587,
+        "ParentItemId": 21969,
+        "BaseRevId": 7020,
+        "SourceRevId": 46444,
+        "DestinationRevId": 7020
+      },
+      {
+        "Path": "/Library/BurstCache/JIT/Hashes/a110ffe6b760e4b56cb86ae44bc7857d.bhc",
+        "ItemId": 30432,
+        "ParentItemId": 28870,
+        "BaseRevId": 7125,
+        "SourceRevId": 46485,
+        "DestinationRevId": 7125
+      },
+      {
+        "Path": "/Library/ScriptAssemblies/Assembly-CSharp.dll",
+        "ItemId": 22705,
+        "ParentItemId": 21993,
+        "BaseRevId": 21524,
+        "SourceRevId": 46505,
+        "DestinationRevId": 21524
+      },
+      {
+        "Path": "/Library/ScriptAssemblies/Assembly-CSharp.pdb",
+        "ItemId": 22706,
+        "ParentItemId": 21993,
+        "BaseRevId": 21525,
+        "SourceRevId": 46506,
+        "DestinationRevId": 21525
+      },
+      {
+        "Path": "/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json",
+        "ItemId": 32683,
+        "ParentItemId": 29530,
+        "BaseRevId": 21708,
+        "SourceRevId": 46509,
+        "DestinationRevId": 21708
+      },
+      {
+        "Path": "/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json",
+        "ItemId": 32684,
+        "ParentItemId": 29532,
+        "BaseRevId": 21709,
+        "SourceRevId": 46510,
+        "DestinationRevId": 21709
+      }
+    ]
+  }
+]
