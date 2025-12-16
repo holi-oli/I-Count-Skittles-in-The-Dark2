@@ -37,7 +37,7 @@ public class VisualNovelScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isTyping)
-                SkipTyping();          // ⬅ Stufe 1
+                SkipTyping();
             else
                 ShowNextLine();
         }
@@ -67,11 +67,18 @@ public class VisualNovelScript : MonoBehaviour
         {
             dialogueText.text += c;
 
-            if (playSound && typeSound != null)
-                typeSound.Play();
+            // 🔊 Sound pro Buchstabe
+            if (playSound && typeSound != null && typeSound.clip != null)
+            {
+                typeSound.Stop(); // neu starten erzwingen
+                typeSound.PlayOneShot(typeSound.clip);
+            }
 
             yield return new WaitForSeconds(typingSpeed);
         }
+
+        // 🔇 Sound AUS wenn fertig
+        StopTypingSound();
 
         isTyping = false;
         OnLineFinished?.Invoke(line);
@@ -82,11 +89,19 @@ public class VisualNovelScript : MonoBehaviour
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
-        string line = dialogueLines[currentLine - 1];
-        dialogueText.text = line;
-        isTyping = false;
+        dialogueText.text = dialogueLines[currentLine - 1];
 
-        OnLineFinished?.Invoke(line);
+        // 🔇 Sound AUS bei Skip
+        StopTypingSound();
+
+        isTyping = false;
+        OnLineFinished?.Invoke(dialogueLines[currentLine - 1]);
+    }
+
+    void StopTypingSound()
+    {
+        if (typeSound != null && typeSound.isPlaying)
+            typeSound.Stop();
     }
 
     public void ForceNextLine()
