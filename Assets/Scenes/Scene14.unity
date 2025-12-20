@@ -191,34 +191,24 @@ MonoBehaviour:
   dialogueText: {fileID: 397322054}
   typingSpeed: 0.05
   dialogueLines:
-  - When I entered the store, I asked the very first person I met.
-  - "\u201CHello, can I!..\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CWhat?\u201D"
-  - "\u201EX.\u201C"
-  - "\u201EHe\u2019s trying to scare me. But how does he know I\u2019m terrified 
-    by the letter \u201CX\u201D?\u201D"
-  - "\u201EI have a terrible frightening image as soon as I imagine it\u2026\u201D"
-  - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
-    cost me a dozen of nerve cells..\u201D"
+  - '"..."'
+  - Those are Skittles.
+  - "I guess that\u2019s why I see to world the way I see it."
+  - "\u2026?"
+  - "I accidently dropped the Skittles and now they\u2019re all white."
+  - "\u2026"
+  - I always knew that underneath they are also white, but it made me sad.
+  - Now they are white like everything else.
+  - White is all I can see now.
+  - 'No. '
+  - "If I cannot see the colors, they don\u2019t exist anymore."
+  - "\u2026!"
+  - Where?
+  - "\u2026"
+  - "I still can\u2019t see the colors."
+  - "\u2026"
+  - "It\u2019s all white, why?"
+  - What?..
   typeSound: {fileID: 1110756928}
   playSound: 1
   inputLocked: 0
@@ -602,55 +592,52 @@ MonoBehaviour:
   delayBeforeButtons: 2
   triggers:
   - triggerTexts:
-    - "\u201CHello, can I!..\u201D"
+    - '"..."'
     action: 1
     buttonCount: 0
     button1Text: 
     button2Text: 
     videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
   - triggerTexts:
-    - "\u201CExcuse me, what?\u201D"
+    - "\u2026?"
+    action: 0
+    buttonCount: 1
+    button1Text: (What are you talking about?)
+    button2Text: 
+    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  - triggerTexts:
+    - White is all I can see now.
+    action: 0
+    buttonCount: 2
+    button1Text: (The rain just washed the colors away, come on)
+    button2Text: (It will be fine.)
+    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  - triggerTexts:
+    - "\u2026!"
+    action: 0
+    buttonCount: 1
+    button1Text: (They do still exist.)
+    button2Text: 
+    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  - triggerTexts:
+    - Where?
+    action: 0
+    buttonCount: 1
+    button1Text: (Everywhere.)
+    button2Text: 
+    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  - triggerTexts:
+    - "It\u2019s all white, why?"
+    action: 0
+    buttonCount: 1
+    button1Text: "(Look there\u2019s still one colored Skittle in the bag.)"
+    button2Text: 
+    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  - triggerTexts:
+    - What?..
     action: 1
-    buttonCount: 0
+    buttonCount: 1
     button1Text: 
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201CX\u201D"
-    action: 0
-    buttonCount: 1
-    button1Text: "(You\u2019d better not to do it\u2026)"
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "(You\u2019d better not to do it\u2026)"
-    action: 0
-    buttonCount: 1
-    button1Text: "(He is clearly not going to change his lines. You ruin the risk
-      of falling into an endless loop\u2026)"
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201CWhat?\u201D"
-    action: 1
-    buttonCount: 1
-    button1Text: "(He is clearly not going to change his lines. You ruin the risk
-      of falling into an endless loop\u2026)"
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201CX.\u201D"
-    action: 0
-    buttonCount: 1
-    button1Text: (What is he trying to tell you?)
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201EHe\u2019s trying to scare me. But how does he know I\u2019m terrified 
-      by the letter \u201CX\u201D?\u201D"
-    action: 0
-    buttonCount: 1
-    button1Text: (What is so terrible about it?)
     button2Text: 
     videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
 --- !u!4 &481451850
@@ -1605,10 +1592,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 397322054}
   triggerTexts:
-  - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
-    cost me a dozen of nerve cells..\u201D"
+  - What?..
   scenesToLoad:
-  - Scene5
+  - Scene15
   exactMatch: 0
   buttonSceneNames:
   - Scene1
@@ -1679,7 +1665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.061409634, g: 0.72327036, b: 0.16372834, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -191,34 +191,21 @@ MonoBehaviour:
   dialogueText: {fileID: 397322054}
   typingSpeed: 0.05
   dialogueLines:
-  - When I entered the store, I asked the very first person I met.
-  - "\u201CHello, can I!..\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CWhat?\u201D"
-  - "\u201EX.\u201C"
-  - "\u201EHe\u2019s trying to scare me. But how does he know I\u2019m terrified 
-    by the letter \u201CX\u201D?\u201D"
-  - "\u201EI have a terrible frightening image as soon as I imagine it\u2026\u201D"
-  - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
-    cost me a dozen of nerve cells..\u201D"
+  - "I\u2019m standing by the shelves. On the shelves there is one bag of Skittles
+    left.."
+  - "The two of us are standing. And Skittles \u2026 lies? Or maybe\u2026 "
+  - "\u201ETo buy Skittles.\u201C"
+  - "\u201ERight here?\u201C"
+  - "\u201EHmm\u2026 I suppose something like \u2018not here\u2019. \u201C"
+  - "\u201EI guessed the first sentence!\u201D"
+  - "\u201EAnd you like for spite\u2026 Like for spite didn\u2019t make a pause before
+    the second one! Wanna take away all my small victories?\u201D"
+  - 'I sigh and pull my hand to take the Skittles. Or rather the last bag of Skittles. '
+  - Or rather the only bag of the Skittles of the last SKittles.
+  - Or rather the only bag of  Skittles of the last bag of Skittles of the last Skittles.
+  - "Or rather the only bag of  Skittles of the last bag of Skittles of the last
+    \u2026"
+  - "\u201EAlready running!\u201C"
   typeSound: {fileID: 1110756928}
   playSound: 1
   inputLocked: 0
@@ -602,57 +589,48 @@ MonoBehaviour:
   delayBeforeButtons: 2
   triggers:
   - triggerTexts:
-    - "\u201CHello, can I!..\u201D"
-    action: 1
-    buttonCount: 0
-    button1Text: 
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201CExcuse me, what?\u201D"
-    action: 1
-    buttonCount: 0
-    button1Text: 
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201CX\u201D"
+    - "The two of us are standing. And Skittles \u2026 lies? Or maybe\u2026 "
     action: 0
     buttonCount: 1
-    button1Text: "(You\u2019d better not to do it\u2026)"
+    button1Text: (Hey, hey, slow down. Do you even remember why you came?)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 0}
   - triggerTexts:
-    - "(You\u2019d better not to do it\u2026)"
+    - "\u201ETo buy Skittles.\u201C"
     action: 0
     buttonCount: 1
-    button1Text: "(He is clearly not going to change his lines. You ruin the risk
-      of falling into an endless loop\u2026)"
+    button1Text: (So buy.)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201CWhat?\u201D"
-    action: 1
-    buttonCount: 1
-    button1Text: "(He is clearly not going to change his lines. You ruin the risk
-      of falling into an endless loop\u2026)"
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201CX.\u201D"
+    - "\u201ERight here?\u201C"
     action: 0
     buttonCount: 1
-    button1Text: (What is he trying to tell you?)
+    button1Text: (How, in your opinion, should I reply?)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EHe\u2019s trying to scare me. But how does he know I\u2019m terrified 
-      by the letter \u201CX\u201D?\u201D"
+    - "\u201EHmm\u2026 I suppose something like \u2018not here\u2019. \u201C"
+    action: 0
+    buttonCount: 2
+    button1Text: (Not here. Take the bag and go to the cash desk.)
+    button2Text: (You are getting on my nerves.)
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "Or rather the only bag of  Skittles of the last bag of Skittles of the last
+      \u2026"
     action: 0
     buttonCount: 1
-    button1Text: (What is so terrible about it?)
+    button1Text: (Reception, Reception!)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - (Reception, Reception!)
+    action: 0
+    buttonCount: 1
+    button1Text: (Fifteen minutes before store closing, hurry up!)
+    button2Text: 
+    videoClip: {fileID: 0}
 --- !u!4 &481451850
 Transform:
   m_ObjectHideFlags: 0
@@ -1605,10 +1583,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 397322054}
   triggerTexts:
-  - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
-    cost me a dozen of nerve cells..\u201D"
+  - "\u201EAlready running!\u201C"
   scenesToLoad:
-  - Scene5
+  - Scene7
   exactMatch: 0
   buttonSceneNames:
   - Scene1
@@ -1679,7 +1656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.061409634, g: 0.72327036, b: 0.16372834, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

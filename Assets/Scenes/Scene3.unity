@@ -161,6 +161,39 @@ MonoBehaviour:
   - "\u201CI imagine people around me having superpowers - what if it helps to gather
     my thoughts?\u201D"
   - "\u201EWell, you know\u2026\u201C"
+  - "When people can read your thoughts. By just looking at you. Hoping they\u2019ll
+    understand."
+  - "\u201ESo I thought - if someone reads my thoughts, then I have to be really
+    concentrated so as not to whip the extra! \u201D"
+  - "I\u2019m deeply breathing in."
+  - "\u201EHello, can I?..\u201C"
+  - "\u2026"
+  - "\u2026"
+  - Oh no, I forgot.
+  - "19-th attempt \u2013 and I\u2019m falling again. I bite my lips with annoyance."
+  - "\u201ESo, once again\u2026\u201C"
+  - "\u201CHello, can I get?..\u201D"
+  - "\u201EThank you, I\u2019m trying really hard \u2026\u201D"
+  - "\u201CDo you think this is it?\u201D"
+  - "\u201EHel-l-l-o, can I?...\u201D"
+  - "\u201EUgh, I\u2019d better keep my lips sealed!\u201D"
+  - "\u201COkay\u2026\u201D"
+  - "\u201EWHA-A-T?!\u201C"
+  - My right leg froze in the air.
+  - "\u201EH-how much?\u201C"
+  - "\u201EH-how do you imagine it?\u201D"
+  - "\u201CI\u2026 I don\u2019t remember\u2026\u201D"
+  - "I\u2019m going to burst into tears."
+  - "\u201EWait, wait! How is it \u201Astep one\u2019?\u201D"
+  - "\u201CSo, it\u2019s already the fourty-second! But wait, if I\u2019m going backwards\u2026
+    then fourtieth! It still doesn\u2019t make a lot of sense!"
+  - "\u201ECould you paraphrase it all at least a little?\u201D"
+  - "\u201EYou can\u2019t just repeat a phrase without changing at least one word.
+    People don\u2019t talk like that!\u201D"
+  - "\u201CYou make it sound like it\u2019s my fault\u2026\u201D"
+  - "\u201EOh no, really..?\u201C"
+  - "\u201EYes, yes!\u201C"
+  - "I gently change the position of the leg, peering carefully into the dirt\u2026"
   typeSound: {fileID: 101909266}
   playSound: 1
   inputLocked: 0
@@ -308,6 +341,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &240592499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 240592500}
+  m_Layer: 5
+  m_Name: VideoPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &240592500
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240592499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2091528942}
+  - {fileID: 784037595}
+  m_Father: {fileID: 1959470860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &397322052
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +544,7 @@ MonoBehaviour:
   m_fontSize: 70
   m_fontSizeBase: 70
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -557,7 +627,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -583,7 +653,7 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -643,21 +713,163 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 74043709}
+  dialoguePanel: {fileID: 397322052}
+  buttonsPanel: {fileID: 784954518}
   button1: {fileID: 1661588247}
   button2: {fileID: 679773835}
   button1Label: {fileID: 399396061}
   button2Label: {fileID: 1642615954}
+  videoPlayer: {fileID: 784037594}
+  videoRawImage: {fileID: 2091528943}
+  videoPanel: {fileID: 240592499}
   delayBeforeButtons: 2
   triggers:
   - triggerTexts:
     - "\u201EI\u2019m on my way to the store\u201D"
+    action: 0
+    buttonCount: 2
     button1Text: (Who are you talking to?)
     button2Text: (Just go.)
+    videoClip: {fileID: 0}
   - triggerTexts:
     - "\u201CI imagine people around me having superpowers - what if it helps to
       gather my thoughts?\u201D"
+    action: 0
+    buttonCount: 2
     button1Text: (What power?)
     button2Text: "\u2026"
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201CHello, can I get?..\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: (Wow, a whole word more! )
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201EThank you, I\u2019m trying really hard \u2026\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: "(In my opinion this time the I sound was longer than usual\u2026)"
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201CDo you think this is it?\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: "(Who knows\u2026)"
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201EUgh, I\u2019d better keep my lips sealed!\u201D"
+    action: 0
+    buttonCount: 2
+    button1Text: (Ha-ha-ha, loser!)
+    button2Text: "(Don\u2019t worry!)"
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201COkay\u2026\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: "(By the way, you have been walking with your left foot on asphalt
+      and your right on dirt for a whole minute\u2026)"
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201EH-how much?\u201C"
+    action: 0
+    buttonCount: 1
+    button1Text: "(Fourty steps on asphalt and fourty-one on dirt\u2026)"
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "(Fourty steps on asphalt and fourty-one on dirt\u2026)"
+    action: 0
+    buttonCount: 1
+    button1Text: (You will have to cancel the previous step)
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201EH-how do you imagine it?\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: (This is not the first time)
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - (This is not the first time)
+    action: 0
+    buttonCount: 2
+    button1Text: "(You were thaught how to do it, come on \u2026)"
+    button2Text: "(You\u2019re so stupid.)"
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "I\u2019m going to burst into tears."
+    action: 0
+    buttonCount: 1
+    button1Text: (Ugh, from the beginning.)
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - (Ugh, from the beginning.)
+    action: 0
+    buttonCount: 1
+    button1Text: (So.)
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - (So.)
+    action: 0
+    buttonCount: 1
+    button1Text: "(Step one - take a step back to get your foot exactly into your
+      own trail\u2026)"
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201EWait, wait! How is it \u201Astep one\u2019?\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: (What then?)
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201CSo, it\u2019s already the fourty-second! But wait, if I\u2019m going
+      backwards\u2026 then fourtieth! It still doesn\u2019t make a lot of sense!"
+    action: 0
+    buttonCount: 1
+    button1Text: "(Okay, okay\u2026 Step fourtieth \u2013 take a step back to get
+      your foot exactly in your trail.)"
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201EYou can\u2019t just repeat a phrase without changing at least one word.
+      People don\u2019t talk like that!\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: "(You\u2019re hopeless\u2026)"
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201CYou make it sound like it\u2019s my fault\u2026\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: "(The store closes in an hour, so \u2026)"
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "(The store closes in an hour, so \u2026)"
+    action: 0
+    buttonCount: 1
+    button1Text: (You will be very, very guilty if you do not buy Skittles)
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201EOh no, really..?\u201C"
+    action: 0
+    buttonCount: 1
+    button1Text: "(So\u2026 Are you ready?"
+    button2Text: 
+    videoClip: {fileID: 0}
 --- !u!4 &531267884
 Transform:
   m_ObjectHideFlags: 0
@@ -699,13 +911,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679773831}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1642615953}
-  m_Father: {fileID: 1959470860}
+  m_Father: {fileID: 784954519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -793,7 +1005,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 679773833}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1643963785}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &730419144
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +1086,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &784037593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 784037595}
+  - component: {fileID: 784037594}
+  m_Layer: 0
+  m_Name: VideoPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &784037594
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784037593}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 519420031}
+  m_TargetTexture: {fileID: 8400000, guid: b882802296b23394f9641a17e8c4efad, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 4
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 0
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!4 &784037595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784037593}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240592500}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &784954518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 784954519}
+  m_Layer: 5
+  m_Name: ButtonsPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &784954519
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784954518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1661588244}
+  - {fileID: 679773832}
+  m_Father: {fileID: 1959470860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &820775701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,171 +1341,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076268710}
   m_CullTransparentMesh: 1
---- !u!1 &1361833686
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1361833689}
-  - component: {fileID: 1361833688}
-  - component: {fileID: 1361833687}
-  m_Layer: 0
-  m_Name: SceneVideoPlayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1361833687
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361833686}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!328 &1361833688
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361833686}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 0}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 1
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_TimeUpdateMode: 2
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 1
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!4 &1361833689
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361833686}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1642615952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,7 +1428,7 @@ MonoBehaviour:
   m_fontSize: 70
   m_fontSizeBase: 70
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1311,6 +1475,148 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642615952}
   m_CullTransparentMesh: 1
+--- !u!1 &1643963783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1643963786}
+  - component: {fileID: 1643963785}
+  - component: {fileID: 1643963784}
+  m_Layer: 0
+  m_Name: ButtonSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1643963784
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643963783}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d802aee1f46cca1478198644202faea8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1643963785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643963783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1410d90007cc62c41a332a9a667ef369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 1643963784}
+--- !u!4 &1643963786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643963783}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 519.1654, y: 704.0541, z: -6.1454377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1661588243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,13 +1643,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661588243}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 399396060}
-  m_Father: {fileID: 1959470860}
+  m_Father: {fileID: 784954519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1431,7 +1737,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1661588245}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1643963785}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1894711503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,7 +1780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 397322054}
-  triggerTexts: []
+  triggerTexts:
+  - "I gently change the position of the leg, peering carefully into the dirt\u2026"
   scenesToLoad:
   - Scene4
   exactMatch: 0
@@ -1582,8 +1901,8 @@ RectTransform:
   - {fileID: 1076268711}
   - {fileID: 820775702}
   - {fileID: 397322053}
-  - {fileID: 1661588244}
-  - {fileID: 679773832}
+  - {fileID: 784954519}
+  - {fileID: 240592500}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1591,6 +1910,78 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2091528941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091528942}
+  - component: {fileID: 2091528944}
+  - component: {fileID: 2091528943}
+  m_Layer: 5
+  m_Name: Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2091528942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091528941}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240592500}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2091528943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091528941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: b882802296b23394f9641a17e8c4efad, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &2091528944
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091528941}
+  m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1598,8 +1989,8 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1959470860}
   - {fileID: 730419147}
-  - {fileID: 1361833689}
   - {fileID: 74043710}
-  - {fileID: 1894711505}
   - {fileID: 531267884}
+  - {fileID: 1894711505}
   - {fileID: 101909267}
+  - {fileID: 1643963786}

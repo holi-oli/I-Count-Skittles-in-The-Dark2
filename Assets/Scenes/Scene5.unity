@@ -219,6 +219,22 @@ MonoBehaviour:
   - "\u201EI have a terrible frightening image as soon as I imagine it\u2026\u201D"
   - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
     cost me a dozen of nerve cells..\u201D"
+  - Something like that.
+  - "\u201ESo, I\u2019ll just keep on ignoring his question.\u201D"
+  - "\u201CWhat?\u201D"
+  - "\u201EX\u201C"
+  - "\u201CWhat?\u201D"
+  - "\u201EX\u201C"
+  - "\u201CWhat?\u201D"
+  - "\u201EX\u201C"
+  - "I gather all the will into a fist\u2026"
+  - "\u201EX?\u201C"
+  - "\u201CX!\u201D"
+  - My interlocutor shook and crawled.
+  - "\u201C Wait! I said that he crawled. But did he\u2026 really crawl? Cause I
+    didn\u2019t even look in his direction.\u201D"
+  - "\u201CYeah, just now!\u201D"
+  - "\u201CYou\u2019re just trying to distract me.\u201D"
   typeSound: {fileID: 1110756928}
   playSound: 1
   inputLocked: 0
@@ -651,6 +667,14 @@ MonoBehaviour:
     action: 0
     buttonCount: 1
     button1Text: (What is so terrible about it?)
+    button2Text: 
+    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  - triggerTexts:
+    - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
+      cost me a dozen of nerve cells..\u201D"
+    action: 1
+    buttonCount: 1
+    button1Text: 
     button2Text: 
     videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
 --- !u!4 &481451850
@@ -1605,10 +1629,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 397322054}
   triggerTexts:
-  - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
-    cost me a dozen of nerve cells..\u201D"
+  - "\u201CYou\u2019re just trying to distract me.\u201D"
   scenesToLoad:
-  - Scene5
+  - Scene6
   exactMatch: 0
   buttonSceneNames:
   - Scene1
@@ -1679,7 +1702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.061409634, g: 0.72327036, b: 0.16372834, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1819,6 +1842,6 @@ SceneRoots:
   - {fileID: 1959470860}
   - {fileID: 730419147}
   - {fileID: 74043710}
+  - {fileID: 481451850}
   - {fileID: 1894711505}
   - {fileID: 1110756929}
-  - {fileID: 481451850}

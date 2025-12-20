@@ -191,34 +191,40 @@ MonoBehaviour:
   dialogueText: {fileID: 397322054}
   typingSpeed: 0.05
   dialogueLines:
-  - When I entered the store, I asked the very first person I met.
-  - "\u201CHello, can I!..\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CExcuse me, what?\u201D"
-  - "\u201EX\u201C"
-  - "\u201CWhat?\u201D"
-  - "\u201EX.\u201C"
-  - "\u201EHe\u2019s trying to scare me. But how does he know I\u2019m terrified 
-    by the letter \u201CX\u201D?\u201D"
-  - "\u201EI have a terrible frightening image as soon as I imagine it\u2026\u201D"
-  - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
-    cost me a dozen of nerve cells..\u201D"
+  - "I\u2019m walking down a familiar street pass the supermarket. "
+  - A bag of Skittles unpleasantly pulls away my hand, reminding me of the times
+    I took physical therapy.
+  - "By the way! They gave me a bag at the pay machine, so now I\u2019m carrying
+    a bag of Skittles inside another bag."
+  - "Don\u2019t get me wrong. I just like the pyramidal structure of verbal constructions."
+  - The supermarket is getting further away.
+  - "\u201EThanks for your interest. I feel like a cold stone laying on the ground.\u201D"
+  - "\u201EAs if I tell you!\u201C"
+  - "\u201EWell, after that interaction and stress, I just feel so heavy. Like a
+    cold stone.\u201D"
+  - "\u201EI agree, it\u2019s not the best comparison for human understanding. But
+    it\u2019s just how I feel\u2026\u201D"
+  - "\u201ESo, the way from home to the supermarket felt like rolling, and the way
+    from the supermarket to home is cold.\u201D"
+  - "\u201ESimple maths. I feel like a cold stone.\u201C"
+  - "I feel movement under my feet. Asphalt grains, petrol stains\u2026"
+  - "I\u2019m trying to keep my balance. And how do people move on something as uneven
+    as the urban plane?.."
+  - "Neat, heel, sock \u2026 I count every meter of the way I\u2019ve gone \u2013
+    I even close my eyes for more concentration."
+  - "\u201EAh?..\u201C"
+  - I unconsciously take a sharp step aside. At the same moment a huge bear sweeps
+    past me with a wide ripple.
+  - "\u201EHey, I\u2019m walking here!\u201C"
+  - "I\u2019m throwing a stumbling peek at the rapidly moving animal."
+  - "It\u2019s red eyes, in turn, look at me with mockery. "
+  - "\u201EDid you see that? How brazen!\u201D"
+  - "\u201EOh really?\u201C"
+  - Although, if you think about it, are there bears with eyes on the back of their
+    head?..
+  - "\u201ECome on. Are you saying someone will seriously want to kill an innocent
+    person carrying a bag of Skittles?\u201D"
+  - "\u201EI\u2019m not in the world you\u2019re talking about.\u201D"
   typeSound: {fileID: 1110756928}
   playSound: 1
   inputLocked: 0
@@ -602,57 +608,64 @@ MonoBehaviour:
   delayBeforeButtons: 2
   triggers:
   - triggerTexts:
-    - "\u201CHello, can I!..\u201D"
-    action: 1
-    buttonCount: 0
-    button1Text: 
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201CExcuse me, what?\u201D"
-    action: 1
-    buttonCount: 0
-    button1Text: 
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
-  - triggerTexts:
-    - "\u201CX\u201D"
+    - The supermarket is getting further away.
     action: 0
     buttonCount: 1
-    button1Text: "(You\u2019d better not to do it\u2026)"
+    button1Text: (How are you feeling?)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 0}
   - triggerTexts:
-    - "(You\u2019d better not to do it\u2026)"
+    - "\u201EThanks for your interest. I feel like a cold stone laying on the ground.\u201D"
     action: 0
     buttonCount: 1
-    button1Text: "(He is clearly not going to change his lines. You ruin the risk
-      of falling into an endless loop\u2026)"
+    button1Text: (What is that supposed to mean?)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201CWhat?\u201D"
-    action: 1
-    buttonCount: 1
-    button1Text: "(He is clearly not going to change his lines. You ruin the risk
-      of falling into an endless loop\u2026)"
-    button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    - "\u201EAs if I tell you!\u201C"
+    action: 0
+    buttonCount: 2
+    button1Text: "(But I\u2019m really interested!)"
+    button2Text: "(You\u2019re just a weirdo.)"
+    videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201CX.\u201D"
+    - "\u201ESimple maths. I feel like a cold stone.\u201C"
     action: 0
     buttonCount: 1
-    button1Text: (What is he trying to tell you?)
+    button1Text: "(Okay\u2026)"
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EHe\u2019s trying to scare me. But how does he know I\u2019m terrified 
-      by the letter \u201CX\u201D?\u201D"
+    - "Neat, heel, sock \u2026 I count every meter of the way I\u2019ve gone \u2013
+      I even close my eyes for more concentration."
     action: 0
     buttonCount: 1
-    button1Text: (What is so terrible about it?)
+    button1Text: (Hey, watch out!)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201EDid you see that? How brazen!\u201D"
+    action: 0
+    buttonCount: 1
+    button1Text: (It was a truck.)
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - Although, if you think about it, are there bears with eyes on the back of their
+      head?..
+    action: 0
+    buttonCount: 1
+    button1Text: (You might have died.)
+    button2Text: 
+    videoClip: {fileID: 0}
+  - triggerTexts:
+    - "\u201ECome on. Are you saying someone will seriously want to kill an innocent
+      person carrying a bag of Skittles?\u201D"
+    action: 0
+    buttonCount: 2
+    button1Text: (You are sick.)
+    button2Text: (The world is cruel and dangerous)
+    videoClip: {fileID: 0}
 --- !u!4 &481451850
 Transform:
   m_ObjectHideFlags: 0
@@ -1605,10 +1618,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 397322054}
   triggerTexts:
-  - "\u201CI can show. Explaining won\u2019t be enough, but keep in mind that it\u2019ll
-    cost me a dozen of nerve cells..\u201D"
+  - "\u201EI\u2019m not in the world you\u2019re talking about.\u201D"
   scenesToLoad:
-  - Scene5
+  - Scene9
   exactMatch: 0
   buttonSceneNames:
   - Scene1
@@ -1679,7 +1691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.061409634, g: 0.72327036, b: 0.16372834, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
