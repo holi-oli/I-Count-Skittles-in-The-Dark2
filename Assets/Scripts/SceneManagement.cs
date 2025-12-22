@@ -12,22 +12,25 @@ public class SceneManagement : MonoBehaviour
     public string[] scenesToLoad;
     public bool exactMatch = false;
 
+    [Header("TEXT-TRIGGER END GAME")]
+    public string[] endGameTriggerTexts;
+
+    [Header("END GAME SETTINGS")]
+    public float endGameDelay = 2f;
+
     [Header("BUTTON SCENE CHANGE")]
-    public string[] buttonSceneNames;   // Szene per Name
-    public int[] buttonSceneIndexes;    // Szene per Index
+    public string[] buttonSceneNames;
+    public int[] buttonSceneIndexes;
 
+    private bool endGameTriggered = false;
 
-    // ----- Button Funktion -----
     public void LoadSceneByButtonIndex(int buttonId)
     {
-        // Prüfen ob Index gültig ist
         if (buttonId < 0)
         {
             Debug.LogError("Button ID ist kleiner als 0!");
             return;
         }
-
-        // Priorität: Zuerst Name → dann Index
 
         if (buttonSceneNames != null && buttonId < buttonSceneNames.Length)
         {
@@ -41,43 +44,73 @@ public class SceneManagement : MonoBehaviour
 
         if (buttonSceneIndexes != null && buttonId < buttonSceneIndexes.Length)
         {
-            int sceneIndex = buttonSceneIndexes[buttonId];
-            SceneManager.LoadScene(sceneIndex);
+            SceneManager.LoadScene(buttonSceneIndexes[buttonId]);
             return;
         }
 
-        Debug.LogError("Für Button " + buttonId + " ist kein gültiger Szenenname oder Szenenindex gesetzt!");
+        Debug.LogError("Für Button " + buttonId + " ist keine Szene gesetzt!");
     }
 
-
-    // ----- Text Trigger -----
     void Update()
     {
-        if (dialogueText == null || triggerTexts.Length == 0 || scenesToLoad.Length == 0)
+        if (dialogueText == null)
+            return;
+
+        string currentText = dialogueText.text;
+
+        if (!endGameTriggered && endGameTriggerTexts != null)
+        {
+            foreach (string trigger in endGameTriggerTexts)
+            {
+                if (string.IsNullOrEmpty(trigger)) continue;
+
+                if ((exactMatch && currentText == trigger) ||
+                    (!exactMatch && currentText.Contains(trigger)))
+                {
+                    EndGame();
+                    return;
+                }
+            }
+        }
+
+        if (triggerTexts == null || scenesToLoad == null)
             return;
 
         if (triggerTexts.Length != scenesToLoad.Length)
         {
-            Debug.LogError("triggerTexts und scenesToLoad müssen gleiche Länge haben!");
+            Debug.LogError("triggerTexts und scenesToLoad müssen gleich lang sein!");
             return;
         }
 
-        string current = dialogueText.text;
-
         for (int i = 0; i < triggerTexts.Length; i++)
         {
-            string trigger = triggerTexts[i];
-
-            if (exactMatch)
+            if ((exactMatch && currentText == triggerTexts[i]) ||
+                (!exactMatch && currentText.Contains(triggerTexts[i])))
             {
-                if (current == trigger)
-                    SceneManager.LoadScene(scenesToLoad[i]);
-            }
-            else
-            {
-                if (current.Contains(trigger))
-                    SceneManager.LoadScene(scenesToLoad[i]);
+                SceneManager.LoadScene(scenesToLoad[i]);
+                return;
             }
         }
+    }
+
+    void EndGame()
+    {
+        if (endGameTriggered) return;
+
+        endGameTriggered = true;
+        StartCoroutine(EndGameRoutine());
+    }
+
+    IEnumerator EndGameRoutine()
+    {
+        Debug.Log("End Game in " + endGameDelay + " Sekunden...");
+
+        yield return new WaitForSeconds(endGameDelay);
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }

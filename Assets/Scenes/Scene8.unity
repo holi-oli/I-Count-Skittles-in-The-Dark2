@@ -198,37 +198,38 @@ MonoBehaviour:
     a bag of Skittles inside another bag."
   - "Don\u2019t get me wrong. I just like the pyramidal structure of verbal constructions."
   - The supermarket is getting further away.
-  - "\u201EThanks for your interest. I feel like a cold stone laying on the ground.\u201D"
-  - "\u201EAs if I tell you!\u201C"
-  - "\u201EWell, after that interaction and stress, I just feel so heavy. Like a
-    cold stone.\u201D"
-  - "\u201EI agree, it\u2019s not the best comparison for human understanding. But
-    it\u2019s just how I feel\u2026\u201D"
-  - "\u201ESo, the way from home to the supermarket felt like rolling, and the way
-    from the supermarket to home is cold.\u201D"
-  - "\u201ESimple maths. I feel like a cold stone.\u201C"
+  - "\"Thanks for your interest. I feel like a cold stone laying on the ground.\u201D"
+  - "\"As if I tell you!\u201C"
+  - "\"Well, after that interaction and stress, I just feel so heavy. Like a cold
+    stone.\u201D"
+  - "\"I agree, it\u2019s not the best comparison for human understanding. But it\u2019s
+    just how I feel\u2026\u201D"
+  - "\"So, the way from home to the supermarket felt like rolling, and the way from
+    the supermarket to home is cold.\u201D"
+  - "\"Simple math's. I feel like a cold stone.\u201C"
   - "I feel movement under my feet. Asphalt grains, petrol stains\u2026"
   - "I\u2019m trying to keep my balance. And how do people move on something as uneven
     as the urban plane?.."
   - "Neat, heel, sock \u2026 I count every meter of the way I\u2019ve gone \u2013
     I even close my eyes for more concentration."
-  - "\u201EAh?..\u201C"
+  - "\"Ah?..\u201C"
   - I unconsciously take a sharp step aside. At the same moment a huge bear sweeps
     past me with a wide ripple.
-  - "\u201EHey, I\u2019m walking here!\u201C"
+  - "\"Hey, I\u2019m walking here!\u201C"
   - "I\u2019m throwing a stumbling peek at the rapidly moving animal."
   - "It\u2019s red eyes, in turn, look at me with mockery. "
-  - "\u201EDid you see that? How brazen!\u201D"
-  - "\u201EOh really?\u201C"
+  - "\"Did you see that? How brazen!\u201D"
+  - "\"Oh really?\u201C"
   - Although, if you think about it, are there bears with eyes on the back of their
     head?..
-  - "\u201ECome on. Are you saying someone will seriously want to kill an innocent
-    person carrying a bag of Skittles?\u201D"
-  - "\u201EI\u2019m not in the world you\u2019re talking about.\u201D"
+  - "\"Come on. Are you saying someone will seriously want to kill an innocent person
+    carrying a bag of Skittles?\u201D"
+  - "\"I\u2019m not in the world you\u2019re talking about.\u201D"
   typeSound: {fileID: 1110756928}
   playSound: 1
   inputLocked: 0
   isTyping: 0
+  choicesActive: 0
 --- !u!4 &74043710
 Transform:
   m_ObjectHideFlags: 0
@@ -427,8 +428,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -445,10 +446,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -457,7 +458,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -615,21 +616,21 @@ MonoBehaviour:
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EThanks for your interest. I feel like a cold stone laying on the ground.\u201D"
+    - "\"Thanks for your interest. I feel like a cold stone laying on the ground.\u201D"
     action: 0
     buttonCount: 1
     button1Text: (What is that supposed to mean?)
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EAs if I tell you!\u201C"
+    - "\"As if I tell you!\u201C"
     action: 0
     buttonCount: 2
     button1Text: "(But I\u2019m really interested!)"
     button2Text: "(You\u2019re just a weirdo.)"
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201ESimple maths. I feel like a cold stone.\u201C"
+    - "\"Simple math's. I feel like a cold stone.\u201C"
     action: 0
     buttonCount: 1
     button1Text: "(Okay\u2026)"
@@ -644,7 +645,7 @@ MonoBehaviour:
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EDid you see that? How brazen!\u201D"
+    - "\"Did you see that? How brazen!\u201D"
     action: 0
     buttonCount: 1
     button1Text: (It was a truck.)
@@ -659,7 +660,7 @@ MonoBehaviour:
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201ECome on. Are you saying someone will seriously want to kill an innocent
+    - "\"Come on. Are you saying someone will seriously want to kill an innocent
       person carrying a bag of Skittles?\u201D"
     action: 0
     buttonCount: 2
@@ -773,6 +774,148 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &720923705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 720923708}
+  - component: {fileID: 720923707}
+  - component: {fileID: 720923706}
+  m_Layer: 0
+  m_Name: ButtonSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &720923706
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720923705}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d802aee1f46cca1478198644202faea8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &720923707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720923705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1410d90007cc62c41a332a9a667ef369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 720923706}
+--- !u!4 &720923708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720923705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 519.1654, y: 704.0541, z: -6.1454377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &730419144
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,8 +1020,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 133.58}
-  m_SizeDelta: {x: 1183.8794, y: 180.67}
+  m_AnchoredPosition: {x: 0, y: 60}
+  m_SizeDelta: {x: 1190, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &781691696
 MonoBehaviour:
@@ -962,7 +1105,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 720923707}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
         m_MethodName: PlayClickSound
         m_Mode: 1
@@ -1085,8 +1228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 350}
-  m_SizeDelta: {x: 1183.879, y: 180.67}
+  m_AnchoredPosition: {x: 0, y: 315}
+  m_SizeDelta: {x: 1190, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863072172
 MonoBehaviour:
@@ -1170,7 +1313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 720923707}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
         m_MethodName: PlayClickSound
         m_Mode: 1
@@ -1527,8 +1670,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1545,10 +1688,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1557,7 +1700,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1618,10 +1761,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 397322054}
   triggerTexts:
-  - "\u201EI\u2019m not in the world you\u2019re talking about.\u201D"
+  - "\"I\u2019m not in the world you\u2019re talking about.\u201D"
   scenesToLoad:
   - Scene9
   exactMatch: 0
+  endGameTriggerTexts: []
+  endGameDelay: 2
   buttonSceneNames:
   - Scene1
   - Scene2
@@ -1641,81 +1786,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1936015681
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1936015682}
-  - component: {fileID: 1936015684}
-  - component: {fileID: 1936015683}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1936015682
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936015681}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1959470860}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -305.01447, y: 63.034546}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1936015683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936015681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.061409634, g: 0.72327036, b: 0.16372834, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1936015684
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936015681}
-  m_CullTransparentMesh: 1
 --- !u!1 &1959470856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,7 +1883,6 @@ RectTransform:
   - {fileID: 1076268711}
   - {fileID: 820775702}
   - {fileID: 397322053}
-  - {fileID: 1936015682}
   - {fileID: 183548527}
   - {fileID: 1738162}
   m_Father: {fileID: 0}
@@ -1834,3 +1903,4 @@ SceneRoots:
   - {fileID: 1894711505}
   - {fileID: 1110756929}
   - {fileID: 481451850}
+  - {fileID: 720923708}

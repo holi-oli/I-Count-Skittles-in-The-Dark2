@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.EventSystems;
 
 public class TriggerButtons : MonoBehaviour
 {
@@ -37,7 +38,6 @@ public class TriggerButtons : MonoBehaviour
         public VideoClip videoClip;
     }
 
-    /* ---------------- REFERENCES ---------------- */
 
     [Header("Dialogue Manager")]
     public VisualNovelScript dialogueManager;
@@ -55,7 +55,7 @@ public class TriggerButtons : MonoBehaviour
     [Header("Video")]
     public VideoPlayer videoPlayer;
     public RawImage videoRawImage;
-    public GameObject videoPanel; // optionaler Hintergrund
+    public GameObject videoPanel; 
 
     [Header("Settings")]
     public float delayBeforeButtons = 1.5f;
@@ -63,13 +63,10 @@ public class TriggerButtons : MonoBehaviour
     [Header("Triggers")]
     public ButtonTrigger[] triggers;
 
-    /* ---------------- INTERNAL ---------------- */
 
     private bool buttonsActive;
     private Coroutine triggerCoroutine;
     private ButtonTrigger pendingTrigger;
-
-    /* ---------------- UNITY ---------------- */
 
     void Start()
     {
@@ -86,7 +83,6 @@ public class TriggerButtons : MonoBehaviour
         dialogueManager.OnLineFinished += HandleLineFinished;
     }
 
-    /* ---------------- TRIGGER ENTRY ---------------- */
 
     void HandleLineFinished(string line)
     {
@@ -98,13 +94,18 @@ public class TriggerButtons : MonoBehaviour
     {
         HideButtons();
 
+        dialogueManager.inputLocked = false;
+        dialogueManager.choicesActive = false; 
+
+        if (EventSystem.current != null)
+            EventSystem.current.sendNavigationEvents = true;
+
         if (TryTrigger(buttonText))
             return;
 
         dialogueManager.ForceNextLine();
     }
 
-    /* ---------------- TRIGGER LOGIC ---------------- */
 
     bool TryTrigger(string sourceText)
     {
@@ -130,7 +131,6 @@ public class TriggerButtons : MonoBehaviour
         return false;
     }
 
-    /* ---------------- EXECUTION ---------------- */
 
     IEnumerator ExecuteTrigger()
     {
@@ -150,7 +150,6 @@ public class TriggerButtons : MonoBehaviour
         }
     }
 
-    /* ---------------- VIDEO ---------------- */
 
     void PlayVideo(VideoClip clip)
     {
@@ -161,11 +160,9 @@ public class TriggerButtons : MonoBehaviour
             return;
         }
 
-        // UI ausblenden
         dialoguePanel.SetActive(false);
         buttonsPanel.SetActive(false);
 
-        // Video UI einblenden
         videoRawImage.gameObject.SetActive(true);
         if (videoPanel != null)
             videoPanel.SetActive(true);
@@ -189,12 +186,17 @@ public class TriggerButtons : MonoBehaviour
         dialogueManager.ForceNextLine();
     }
 
-    /* ---------------- BUTTONS ---------------- */
 
     void ShowButtons(ButtonTrigger trigger)
     {
         buttonsActive = true;
         buttonsPanel.SetActive(true);
+
+        dialogueManager.inputLocked = true;
+        dialogueManager.choicesActive = true; 
+
+        if (EventSystem.current != null)
+            EventSystem.current.sendNavigationEvents = false;
 
         button1Label.text = trigger.button1Text;
         button1.gameObject.SetActive(true);

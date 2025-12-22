@@ -19,6 +19,7 @@ public class VisualNovelScript : MonoBehaviour
 
     [HideInInspector] public bool inputLocked = false;
     [HideInInspector] public bool isTyping = false;
+    [HideInInspector] public bool choicesActive = false; 
 
     public Action<string> OnLineFinished;
 
@@ -32,7 +33,8 @@ public class VisualNovelScript : MonoBehaviour
 
     void Update()
     {
-        if (inputLocked) return;
+        if (inputLocked || choicesActive)
+            return;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -67,19 +69,16 @@ public class VisualNovelScript : MonoBehaviour
         {
             dialogueText.text += c;
 
-            // 🔊 Sound pro Buchstabe
             if (playSound && typeSound != null && typeSound.clip != null)
             {
-                typeSound.Stop(); // neu starten erzwingen
+                typeSound.Stop();
                 typeSound.PlayOneShot(typeSound.clip);
             }
 
             yield return new WaitForSeconds(typingSpeed);
         }
 
-        // 🔇 Sound AUS wenn fertig
         StopTypingSound();
-
         isTyping = false;
         OnLineFinished?.Invoke(line);
     }
@@ -90,10 +89,7 @@ public class VisualNovelScript : MonoBehaviour
             StopCoroutine(typingCoroutine);
 
         dialogueText.text = dialogueLines[currentLine - 1];
-
-        // 🔇 Sound AUS bei Skip
         StopTypingSound();
-
         isTyping = false;
         OnLineFinished?.Invoke(dialogueLines[currentLine - 1]);
     }

@@ -191,33 +191,34 @@ MonoBehaviour:
   dialogueText: {fileID: 397322054}
   typingSpeed: 0.05
   dialogueLines:
-  - "\u201EHello, c-can I g-get\u2026 Skittles, please?\u201D"
-  - "\u201EYOU HAVE IT.\u201C"
-  - "\u201EAh.\u201C"
-  - "\u201EGIVE.\u201C"
+  - "\"Hello, c-can I g-get\u2026 Skittles, please?\u201D"
+  - "\"YOU HAVE IT.\u201C"
+  - "\"Ah.\u201C"
+  - "\"GIVE.\u201C"
   - 'I put out a weighty bag at the pay desk. Of course, not just a bag but the Skittles
     too. '
-  - "\u201EHello, can \u2026 I get it back, please?\u201D"
-  - "\u201ENO.\u201C"
-  - "\u201EPlease!...\u201C"
-  - "\u201ENOO.\u201C"
-  - "\u201EBut please! I really need them!\u201D"
-  - "\u201ENOOO.\u201C"
-  - "\u201EBut why not?...\u201C"
-  - "\u201EGIVE MORE.\u201C"
-  - "\u201EBut I don\u2019t have anything else\u2026\u201D"
-  - "\u201EWhat?\u201C"
-  - "\u201EReally? \u2026. What would I do without you!\u201D"
+  - "\"Hello, can \u2026 I get it back, please?\u201D"
+  - "\"NO.\u201C"
+  - "\"Please!...\u201C"
+  - "\"NOO.\u201C"
+  - "\"But please! I really need them!\u201D"
+  - "\"NOOO.\u201C"
+  - "\"But why not?...\u201C"
+  - "\"GIVE MORE.\u201C"
+  - "\"But I don\u2019t have anything else\u2026\u201D"
+  - "\"What?\u201C"
+  - "\"Really? \u2026. What would I do without you!\u201D"
   - I pull a crumpled cash out of my pocket and give it to the cashier.
   - He starts to carefully examine it.
   - "\u2026"
   - About two days have passed before he nodded satisfactorily and put a cash in
     the machine.
-  - "\u201EThank you, goodbye!\u201C"
+  - "\"Thank you, goodbye!\u201C"
   typeSound: {fileID: 1110756928}
   playSound: 1
   inputLocked: 0
   isTyping: 0
+  choicesActive: 0
 --- !u!4 &74043710
 Transform:
   m_ObjectHideFlags: 0
@@ -416,8 +417,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -434,10 +435,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -446,7 +447,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -597,21 +598,21 @@ MonoBehaviour:
   delayBeforeButtons: 2
   triggers:
   - triggerTexts:
-    - "\u201EHello, c-can I g-get\u2026 Skittles, please?\u201D"
+    - "\"Hello, c-can I g-get\u2026 Skittles, please?\u201D"
     action: 1
     buttonCount: 0
     button1Text: 
     button2Text: 
     videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
   - triggerTexts:
-    - "\u201EBut I don\u2019t have anything else\u2026\u201D"
+    - "\"But I don\u2019t have anything else\u2026\u201D"
     action: 0
     buttonCount: 1
     button1Text: (Hey.)
     button2Text: 
     videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
   - triggerTexts:
-    - "\u201EWhat?\u201C"
+    - "\"What?\u201C"
     action: 0
     buttonCount: 2
     button1Text: (You are pathetic.)
@@ -800,6 +801,148 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &737477128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737477131}
+  - component: {fileID: 737477130}
+  - component: {fileID: 737477129}
+  m_Layer: 0
+  m_Name: ButtonSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &737477129
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737477128}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d802aee1f46cca1478198644202faea8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &737477130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737477128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1410d90007cc62c41a332a9a667ef369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 737477129}
+--- !u!4 &737477131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737477128}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 519.1654, y: 704.0541, z: -6.1454377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &781691694
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,8 +979,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 133.58}
-  m_SizeDelta: {x: 1183.8794, y: 180.67}
+  m_AnchoredPosition: {x: 0, y: 60}
+  m_SizeDelta: {x: 1190, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &781691696
 MonoBehaviour:
@@ -921,7 +1064,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 737477130}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
         m_MethodName: PlayClickSound
         m_Mode: 1
@@ -1044,8 +1187,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 350}
-  m_SizeDelta: {x: 1183.879, y: 180.67}
+  m_AnchoredPosition: {x: 0, y: 315}
+  m_SizeDelta: {x: 1190, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863072172
 MonoBehaviour:
@@ -1129,7 +1272,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 737477130}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
         m_MethodName: PlayClickSound
         m_Mode: 1
@@ -1486,8 +1629,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1504,10 +1647,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1516,7 +1659,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1577,10 +1720,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 397322054}
   triggerTexts:
-  - "\u201EThank you, goodbye!\u201C"
+  - "\"Thank you, goodbye!\u201C"
   scenesToLoad:
   - Scene8
   exactMatch: 0
+  endGameTriggerTexts: []
+  endGameDelay: 2
   buttonSceneNames:
   - Scene1
   - Scene2
@@ -1600,81 +1745,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1936015681
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1936015682}
-  - component: {fileID: 1936015684}
-  - component: {fileID: 1936015683}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1936015682
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936015681}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1959470860}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -305.01447, y: 63.034546}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1936015683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936015681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.061409634, g: 0.72327036, b: 0.16372834, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1936015684
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936015681}
-  m_CullTransparentMesh: 1
 --- !u!1 &1959470856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,7 +1842,6 @@ RectTransform:
   - {fileID: 1076268711}
   - {fileID: 820775702}
   - {fileID: 397322053}
-  - {fileID: 1936015682}
   - {fileID: 183548527}
   - {fileID: 1738162}
   m_Father: {fileID: 0}
@@ -1793,3 +1862,4 @@ SceneRoots:
   - {fileID: 1894711505}
   - {fileID: 1110756929}
   - {fileID: 481451850}
+  - {fileID: 737477131}

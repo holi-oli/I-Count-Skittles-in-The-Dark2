@@ -157,47 +157,48 @@ MonoBehaviour:
   - "I\u2019m on my way to the store rehearsing the speech."
   - "I haven\u2019t been out for so long that I\u2019ve forgotten what words they
     say when they enter the store."
-  - "\u201EI\u2019m on my way to the store\u201D"
+  - "\"I\u2019m on my way to the store\u201D"
   - "\u201CI imagine people around me having superpowers - what if it helps to gather
     my thoughts?\u201D"
-  - "\u201EWell, you know\u2026\u201C"
+  - "\"Well, you know\u2026\u201C"
   - "When people can read your thoughts. By just looking at you. Hoping they\u2019ll
     understand."
-  - "\u201ESo I thought - if someone reads my thoughts, then I have to be really
-    concentrated so as not to whip the extra! \u201D"
+  - "\"So I thought - if someone reads my thoughts, then I have to be really concentrated
+    so as not to whip the extra! \u201D"
   - "I\u2019m deeply breathing in."
-  - "\u201EHello, can I?..\u201C"
+  - "\"Hello, can I?..\u201C"
   - "\u2026"
   - "\u2026"
   - Oh no, I forgot.
-  - "19-th attempt \u2013 and I\u2019m falling again. I bite my lips with annoyance."
-  - "\u201ESo, once again\u2026\u201C"
+  - "19-th attempt \u2013 and I\u2019m failing again. I bite my lips with annoyance."
+  - "\"So, once again\u2026\u201C"
   - "\u201CHello, can I get?..\u201D"
-  - "\u201EThank you, I\u2019m trying really hard \u2026\u201D"
+  - "\"Thank you, I\u2019m trying really hard \u2026\u201D"
   - "\u201CDo you think this is it?\u201D"
-  - "\u201EHel-l-l-o, can I?...\u201D"
-  - "\u201EUgh, I\u2019d better keep my lips sealed!\u201D"
+  - "\"Hel-l-l-o, can I?...\u201D"
+  - "\"Ugh, I\u2019d better keep my lips sealed!\u201D"
   - "\u201COkay\u2026\u201D"
-  - "\u201EWHA-A-T?!\u201C"
+  - "\"WHA-A-T?!\u201C"
   - My right leg froze in the air.
-  - "\u201EH-how much?\u201C"
-  - "\u201EH-how do you imagine it?\u201D"
+  - "\"H-how much?\u201C"
+  - "\"H-how do you imagine it?\u201D"
   - "\u201CI\u2026 I don\u2019t remember\u2026\u201D"
   - "I\u2019m going to burst into tears."
-  - "\u201EWait, wait! How is it \u201Astep one\u2019?\u201D"
-  - "\u201CSo, it\u2019s already the fourty-second! But wait, if I\u2019m going backwards\u2026
-    then fourtieth! It still doesn\u2019t make a lot of sense!"
-  - "\u201ECould you paraphrase it all at least a little?\u201D"
-  - "\u201EYou can\u2019t just repeat a phrase without changing at least one word.
-    People don\u2019t talk like that!\u201D"
+  - "\"Wait, wait! How is it \u201Astep one\u2019?\u201D"
+  - "\u201CSo, it\u2019s already the forty-second! But wait, if I\u2019m going backwards\u2026
+    then fortieth! It still doesn\u2019t make a lot of sense!"
+  - "\"Could you paraphrase it all at least a little?\u201D"
+  - "\"You can\u2019t just repeat a phrase without changing at least one word. People
+    don\u2019t talk like that!\u201D"
   - "\u201CYou make it sound like it\u2019s my fault\u2026\u201D"
-  - "\u201EOh no, really..?\u201C"
-  - "\u201EYes, yes!\u201C"
+  - "\"Oh no, really..?\u201C"
+  - "\"Yes, yes!\u201C"
   - "I gently change the position of the leg, peering carefully into the dirt\u2026"
   typeSound: {fileID: 101909266}
   playSound: 1
   inputLocked: 0
   isTyping: 0
+  choicesActive: 0
 --- !u!4 &74043710
 Transform:
   m_ObjectHideFlags: 0
@@ -523,8 +524,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -541,10 +542,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -553,7 +554,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -725,7 +726,7 @@ MonoBehaviour:
   delayBeforeButtons: 2
   triggers:
   - triggerTexts:
-    - "\u201EI\u2019m on my way to the store\u201D"
+    - "\"I\u2019m on my way to the store\u201D"
     action: 0
     buttonCount: 2
     button1Text: (Who are you talking to?)
@@ -747,7 +748,7 @@ MonoBehaviour:
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EThank you, I\u2019m trying really hard \u2026\u201D"
+    - "\"Thank you, I\u2019m trying really hard \u2026\u201D"
     action: 0
     buttonCount: 1
     button1Text: "(In my opinion this time the I sound was longer than usual\u2026)"
@@ -761,7 +762,7 @@ MonoBehaviour:
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EUgh, I\u2019d better keep my lips sealed!\u201D"
+    - "\"Ugh, I\u2019d better keep my lips sealed!\u201D"
     action: 0
     buttonCount: 2
     button1Text: (Ha-ha-ha, loser!)
@@ -772,25 +773,25 @@ MonoBehaviour:
     action: 0
     buttonCount: 1
     button1Text: "(By the way, you have been walking with your left foot on asphalt
-      and your right on dirt for a whole minute\u2026)"
+      and with your right on dirt for a whole minute\u2026)"
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EH-how much?\u201C"
+    - "\"H-how much?\u201C"
     action: 0
     buttonCount: 1
-    button1Text: "(Fourty steps on asphalt and fourty-one on dirt\u2026)"
+    button1Text: "(Forty steps on asphalt and forty-one on dirt\u2026)"
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "(Fourty steps on asphalt and fourty-one on dirt\u2026)"
+    - "(Forty steps on asphalt and forty-one on dirt\u2026)"
     action: 0
     buttonCount: 1
     button1Text: (You will have to cancel the previous step)
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EH-how do you imagine it?\u201D"
+    - "\"H-how do you imagine it?\u201D"
     action: 0
     buttonCount: 1
     button1Text: (This is not the first time)
@@ -800,7 +801,7 @@ MonoBehaviour:
     - (This is not the first time)
     action: 0
     buttonCount: 2
-    button1Text: "(You were thaught how to do it, come on \u2026)"
+    button1Text: "(You were taught how to do it, come on \u2026)"
     button2Text: "(You\u2019re so stupid.)"
     videoClip: {fileID: 0}
   - triggerTexts:
@@ -826,23 +827,23 @@ MonoBehaviour:
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EWait, wait! How is it \u201Astep one\u2019?\u201D"
+    - "\"Wait, wait! How is it \u201Astep one\u2019?\u201D"
     action: 0
     buttonCount: 1
     button1Text: (What then?)
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201CSo, it\u2019s already the fourty-second! But wait, if I\u2019m going
-      backwards\u2026 then fourtieth! It still doesn\u2019t make a lot of sense!"
+    - "\u201CSo, it\u2019s already the forty-second! But wait, if I\u2019m going
+      backwards\u2026 then fortieth! It still doesn\u2019t make a lot of sense!"
     action: 0
     buttonCount: 1
-    button1Text: "(Okay, okay\u2026 Step fourtieth \u2013 take a step back to get
+    button1Text: "(Okay, okay\u2026 Step fortieth \u2013 take a step back to get
       your foot exactly in your trail.)"
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EYou can\u2019t just repeat a phrase without changing at least one word.
+    - "\"You can\u2019t just repeat a phrase without changing at least one word.
       People don\u2019t talk like that!\u201D"
     action: 0
     buttonCount: 1
@@ -864,7 +865,7 @@ MonoBehaviour:
     button2Text: 
     videoClip: {fileID: 0}
   - triggerTexts:
-    - "\u201EOh no, really..?\u201C"
+    - "\"Oh no, really..?\u201C"
     action: 0
     buttonCount: 1
     button1Text: "(So\u2026 Are you ready?"
@@ -921,8 +922,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 133.58}
-  m_SizeDelta: {x: 1183.8794, y: 180.67}
+  m_AnchoredPosition: {x: 0, y: 60}
+  m_SizeDelta: {x: 1190, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679773833
 MonoBehaviour:
@@ -1407,8 +1408,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1425,10 +1426,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1437,7 +1438,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1653,8 +1654,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 350}
-  m_SizeDelta: {x: 1183.879, y: 180.67}
+  m_AnchoredPosition: {x: 0, y: 315}
+  m_SizeDelta: {x: 1190, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1661588245
 MonoBehaviour:
@@ -1785,6 +1786,8 @@ MonoBehaviour:
   scenesToLoad:
   - Scene4
   exactMatch: 0
+  endGameTriggerTexts: []
+  endGameDelay: 2
   buttonSceneNames:
   - Scene1
   - Scene2
