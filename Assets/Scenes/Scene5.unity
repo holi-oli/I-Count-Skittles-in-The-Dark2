@@ -596,35 +596,35 @@ MonoBehaviour:
     buttonCount: 1
     button1Text: 
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - "\"X?\u201C"
     action: 1
     buttonCount: 1
     button1Text: 
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - "\u201CX!\u201D"
     action: 1
     buttonCount: 1
     button1Text: 
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - My interlocutor shook and crawled.
     action: 0
     buttonCount: 1
     button1Text: "(You just repeated after him\u2026)"
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - "(You just repeated after him\u2026)"
     action: 0
     buttonCount: 1
     button1Text: (And it worked! Do it more often)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - "\u201CWait! I said that he crawled. But did he\u2026 really crawl? Cause I
       didn\u2019t even look in his direction.\u201D"
@@ -632,14 +632,14 @@ MonoBehaviour:
     buttonCount: 1
     button1Text: (When exactly did you say that?)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - "\u201CYeah, just now!\u201D"
     action: 0
     buttonCount: 1
     button1Text: (Personally, I did not hear.)
     button2Text: 
-    videoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+    videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
 --- !u!4 &481451850
 Transform:
   m_ObjectHideFlags: 0
@@ -1196,7 +1196,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932385444}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1210,14 +1210,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0

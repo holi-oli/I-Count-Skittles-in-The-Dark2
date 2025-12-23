@@ -197,31 +197,6 @@ MonoBehaviour:
   - "I understood I\u2019m going crazy.  The Skittles are truly helping me."
   - "\u2026"
   - Ultimately, things will get easier.
-  - Really?...
-  - I must be quite unlike an exemplary protagonist, right?
-  - "\u2026"
-  - "To be honest, I haven\u2018t read many visual novels."
-  - "Sometimes I regret it, because now I need a lot of effort just to distinguish
-    letters and words\u2026"
-  - "\u2026"
-  - "By the way\u2026"
-  - "Don\u2019t ask me about too much."
-  - "\u2026"
-  - "How stupid is all this\u2026"
-  - "From the very beginning you followed me, read my thoughts, heard my silly conversations\u2026"
-  - Maybe I seem crazy and weird to you?..
-  - "\u2026"
-  - What is it like to see the world with my eyes?
-  - "Ever since\u2026 ahem\u2026 something happened, I only see white everywhere."
-  - "No, don\u2019t worry about me, I\u2019ve been used to it for a long time! To
-    be honest, I even forgot what other colors look like besides the bright colors
-    of Skittles."
-  - "\u2026"
-  - "Those monsters from the store\u2026 they didn\u2019t scare me at all. Because
-    I know they won\u2019t hurt me."
-  - "Sometimes I think they\u2019re the ones who are scared\u2026"
-  - Really?
-  - "I\u2019m serious!"
   typeSound: {fileID: 1110756928}
   playSound: 1
   inputLocked: 0
@@ -1161,7 +1136,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932385444}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d138ef247d992e84fa6226099adc477d, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1175,14 +1150,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0

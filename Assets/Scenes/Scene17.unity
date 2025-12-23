@@ -255,62 +255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397322052}
   m_CullTransparentMesh: 1
---- !u!1 &481451848
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 481451850}
-  - component: {fileID: 481451849}
-  m_Layer: 0
-  m_Name: TriggerButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &481451849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481451848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d15afaef7b8a0504fb95c777fa5065cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 74043709}
-  dialoguePanel: {fileID: 397322052}
-  buttonsPanel: {fileID: 0}
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button1Label: {fileID: 0}
-  button2Label: {fileID: 0}
-  videoPlayer: {fileID: 0}
-  videoRawImage: {fileID: 0}
-  videoPanel: {fileID: 0}
-  delayBeforeButtons: 2
-  triggers: []
---- !u!4 &481451850
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481451848}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 999.99347, y: 713.9178, z: -6.6770945}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,4 +860,3 @@ SceneRoots:
   - {fileID: 74043710}
   - {fileID: 1894711505}
   - {fileID: 1110756929}
-  - {fileID: 481451850}
