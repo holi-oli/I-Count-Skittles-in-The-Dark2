@@ -730,7 +730,9 @@ MonoBehaviour:
     action: 0
     buttonCount: 2
     button1Text: (Who are you talking to?)
+    button1IsBad: 0
     button2Text: (Just go.)
+    button2IsBad: 1
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\u201CI imagine people around me having superpowers - what if it helps to
@@ -738,35 +740,45 @@ MonoBehaviour:
     action: 0
     buttonCount: 2
     button1Text: (What power?)
+    button1IsBad: 0
     button2Text: "\u2026"
+    button2IsBad: 1
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\u201CHello, can I get?..\u201D"
     action: 0
     buttonCount: 1
     button1Text: (Wow, a whole word more! )
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Thank you, I\u2019m trying really hard \u2026\u201D"
     action: 0
     buttonCount: 1
     button1Text: "(In my opinion this time the I sound was longer than usual\u2026)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\u201CDo you think this is it?\u201D"
     action: 0
     buttonCount: 1
     button1Text: "(Who knows\u2026)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Ugh, I\u2019d better keep my lips sealed!\u201D"
     action: 0
     buttonCount: 2
     button1Text: (Ha-ha-ha, loser!)
+    button1IsBad: 1
     button2Text: "(Don\u2019t worry!)"
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\u201COkay\u2026\u201D"
@@ -774,49 +786,63 @@ MonoBehaviour:
     buttonCount: 1
     button1Text: "(By the way, you have been walking with your left foot on asphalt
       and with your right on dirt for a whole minute\u2026)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"H-how much?\u201C"
     action: 0
     buttonCount: 1
     button1Text: "(Forty steps on asphalt and forty-one on dirt\u2026)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "(Forty steps on asphalt and forty-one on dirt\u2026)"
     action: 0
     buttonCount: 1
     button1Text: (You will have to cancel the previous step)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"H-how do you imagine it?\u201D"
     action: 0
     buttonCount: 1
     button1Text: (This is not the first time)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - (This is not the first time)
     action: 0
     buttonCount: 2
     button1Text: "(You were taught how to do it, come on \u2026)"
+    button1IsBad: 0
     button2Text: "(You\u2019re so stupid.)"
+    button2IsBad: 1
     videoClip: {fileID: 0}
   - triggerTexts:
     - "I\u2019m going to burst into tears."
     action: 0
     buttonCount: 1
     button1Text: (Ugh, from the beginning.)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - (Ugh, from the beginning.)
     action: 0
     buttonCount: 1
     button1Text: (So.)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - (So.)
@@ -824,14 +850,18 @@ MonoBehaviour:
     buttonCount: 1
     button1Text: "(Step one - take a step back to get your foot exactly into your
       own trail\u2026)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Wait, wait! How is it \u201Astep one\u2019?\u201D"
     action: 0
     buttonCount: 1
     button1Text: (What then?)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\u201CSo, it\u2019s already the forty-second! But wait, if I\u2019m going
@@ -840,7 +870,9 @@ MonoBehaviour:
     buttonCount: 1
     button1Text: "(Okay, okay\u2026 Step fortieth \u2013 take a step back to get
       your foot exactly in your trail.)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"You can\u2019t just repeat a phrase without changing at least one word.
@@ -848,28 +880,36 @@ MonoBehaviour:
     action: 0
     buttonCount: 1
     button1Text: "(You\u2019re hopeless\u2026)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\u201CYou make it sound like it\u2019s my fault\u2026\u201D"
     action: 0
     buttonCount: 1
     button1Text: "(The store closes in an hour, so \u2026)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "(The store closes in an hour, so \u2026)"
     action: 0
     buttonCount: 1
     button1Text: (You will be very, very guilty if you do not buy Skittles)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Oh no, really..?\u201C"
     action: 0
     buttonCount: 1
     button1Text: "(So\u2026 Are you ready?"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
 --- !u!4 &531267884
 Transform:
@@ -1397,7 +1437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 01d154a0e011d184b807a248dd842e52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e7bb2a3888e45444a9f74ec0c6edd19, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1952,6 +1992,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1752789587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1752789589}
+  - component: {fileID: 1752789588}
+  m_Layer: 0
+  m_Name: EndingCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1752789588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752789587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb64dabe9ca9c42afd7ceda69a8961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badChoiceCount: 0
+--- !u!4 &1752789589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752789587}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1059.2468, y: 659.0565, z: -0.6536758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894711503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,3 +2285,4 @@ SceneRoots:
   - {fileID: 101909267}
   - {fileID: 1643963786}
   - {fileID: 1219259822}
+  - {fileID: 1752789589}

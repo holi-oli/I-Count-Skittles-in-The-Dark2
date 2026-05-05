@@ -741,7 +741,9 @@ MonoBehaviour:
     action: 0
     buttonCount: 1
     button1Text: (Are you sure all this is really happening?)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"And how else?\u201C"
@@ -749,28 +751,36 @@ MonoBehaviour:
     buttonCount: 2
     button1Text: (Have you never been visited by the idea that all this is only in
       your head?)
+    button1IsBad: 0
     button2Text: "(\u2026)"
+    button2IsBad: 1
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Apparently, these Skittles work.\u201D"
     action: 0
     buttonCount: 2
     button1Text: (Skittles have nothing to do with it.)
+    button1IsBad: 1
     button2Text: "(\u2026)"
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"I am really, really grateful to you\u2026 But please\u2026 no more.\u201D"
     action: 0
     buttonCount: 2
     button1Text: (You must accept the truth.)
+    button1IsBad: 1
     button2Text: "(\u2026)"
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"You know what?\u201C"
     action: 0
     buttonCount: 1
     button1Text: (What?)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Since I am a character in a visual novel\u2026 I want to talk to whoever
@@ -778,7 +788,9 @@ MonoBehaviour:
     action: 0
     buttonCount: 2
     button1Text: (As you say.)
+    button1IsBad: 0
     button2Text: (This can affect you in a wrong way.)
+    button2IsBad: 1
     videoClip: {fileID: 0}
 --- !u!4 &481451850
 Transform:
@@ -882,6 +894,51 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &544593950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544593952}
+  - component: {fileID: 544593951}
+  m_Layer: 0
+  m_Name: EndingCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &544593951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544593950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb64dabe9ca9c42afd7ceda69a8961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badChoiceCount: 0
+--- !u!4 &544593952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544593950}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1059.2468, y: 659.0565, z: -0.6536758}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2079,3 +2136,4 @@ SceneRoots:
   - {fileID: 481451850}
   - {fileID: 78945385}
   - {fileID: 1718062517}
+  - {fileID: 544593952}

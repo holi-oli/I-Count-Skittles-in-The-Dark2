@@ -36,7 +36,7 @@ public class VisualNovelScript : MonoBehaviour
         if (inputLocked || choicesActive)
             return;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             if (isTyping)
                 SkipTyping();

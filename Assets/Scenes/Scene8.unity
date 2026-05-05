@@ -613,28 +613,36 @@ MonoBehaviour:
     action: 0
     buttonCount: 1
     button1Text: (How are you feeling?)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Thanks for your interest. I feel like a cold stone laying on the ground.\u201D"
     action: 0
     buttonCount: 1
     button1Text: (What is that supposed to mean?)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"As if I tell you!\u201C"
     action: 0
     buttonCount: 2
     button1Text: "(But I\u2019m really interested!)"
+    button1IsBad: 0
     button2Text: "(You\u2019re just a weirdo.)"
+    button2IsBad: 1
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Simple math's. I feel like a cold stone.\u201C"
     action: 0
     buttonCount: 1
     button1Text: "(Okay\u2026)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "Neat, heel, sock \u2026 I count every meter of the way I\u2019ve gone \u2013
@@ -642,14 +650,18 @@ MonoBehaviour:
     action: 0
     buttonCount: 1
     button1Text: (Hey, watch out!)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Did you see that? How brazen!\u201D"
     action: 0
     buttonCount: 1
     button1Text: (It was a truck.)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - Although, if you think about it, are there bears with eyes on the back of their
@@ -657,7 +669,9 @@ MonoBehaviour:
     action: 0
     buttonCount: 1
     button1Text: (You might have died.)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"Come on. Are you saying someone will seriously want to kill an innocent
@@ -665,7 +679,9 @@ MonoBehaviour:
     action: 0
     buttonCount: 2
     button1Text: (You are sick.)
+    button1IsBad: 1
     button2Text: (The world is cruel and dangerous)
+    button2IsBad: 0
     videoClip: {fileID: 0}
 --- !u!4 &481451850
 Transform:
@@ -1352,7 +1368,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1944a78b6fe866f4788ca675122af51f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 32bd4b9d920ddd946b2f72fc2ed84f79, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1856,6 +1872,51 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1473005711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1473005713}
+  - component: {fileID: 1473005712}
+  m_Layer: 0
+  m_Name: EndingCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1473005712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473005711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb64dabe9ca9c42afd7ceda69a8961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badChoiceCount: 0
+--- !u!4 &1473005713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473005711}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1059.2468, y: 659.0565, z: -0.6536758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894711503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,3 +2168,4 @@ SceneRoots:
   - {fileID: 481451850}
   - {fileID: 720923708}
   - {fileID: 924394594}
+  - {fileID: 1473005713}

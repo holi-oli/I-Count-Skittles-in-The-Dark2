@@ -24,7 +24,24 @@ public class SceneManagement : MonoBehaviour
 
     private bool endGameTriggered = false;
 
+    
     public void LoadSceneByButtonIndex(int buttonId)
+    {
+        LoadScene(buttonId);
+    }
+
+    
+    public void BadButtonPressed(int buttonId)
+    {
+        if (EndingCounter.instance != null)
+        {
+            EndingCounter.instance.AddBadChoice();
+        }
+
+        LoadScene(buttonId);
+    }
+
+    void LoadScene(int buttonId)
     {
         if (buttonId < 0)
         {
@@ -58,6 +75,7 @@ public class SceneManagement : MonoBehaviour
 
         string currentText = dialogueText.text;
 
+        
         if (!endGameTriggered && endGameTriggerTexts != null)
         {
             foreach (string trigger in endGameTriggerTexts)
@@ -73,6 +91,7 @@ public class SceneManagement : MonoBehaviour
             }
         }
 
+        
         if (triggerTexts == null || scenesToLoad == null)
             return;
 
@@ -113,4 +132,5 @@ public class SceneManagement : MonoBehaviour
         Application.Quit();
 #endif
     }
+
 }

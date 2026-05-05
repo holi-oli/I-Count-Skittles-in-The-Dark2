@@ -31,13 +31,16 @@ public class TriggerButtons : MonoBehaviour
 
         [Header("Buttons (nur bei ShowButtons)")]
         public ButtonCount buttonCount = ButtonCount.One;
+
         public string button1Text;
+        public bool button1IsBad; 
+
         public string button2Text;
+        public bool button2IsBad; 
 
         [Header("Video (nur bei PlayVideo)")]
         public VideoClip videoClip;
     }
-
 
     [Header("Dialogue Manager")]
     public VisualNovelScript dialogueManager;
@@ -55,7 +58,7 @@ public class TriggerButtons : MonoBehaviour
     [Header("Video")]
     public VideoPlayer videoPlayer;
     public RawImage videoRawImage;
-    public GameObject videoPanel; 
+    public GameObject videoPanel;
 
     [Header("Settings")]
     public float delayBeforeButtons = 1.5f;
@@ -63,10 +66,10 @@ public class TriggerButtons : MonoBehaviour
     [Header("Triggers")]
     public ButtonTrigger[] triggers;
 
-
     private bool buttonsActive;
     private Coroutine triggerCoroutine;
     private ButtonTrigger pendingTrigger;
+    private ButtonTrigger currentButtonTrigger; 
 
     void Start()
     {
@@ -76,13 +79,13 @@ public class TriggerButtons : MonoBehaviour
         if (videoPanel != null)
             videoPanel.SetActive(false);
 
-        button1.onClick.AddListener(() => OnButtonClicked(button1Label.text));
-        button2.onClick.AddListener(() => OnButtonClicked(button2Label.text));
+        
+        button1.onClick.AddListener(() => OnChoiceSelected(1));
+        button2.onClick.AddListener(() => OnChoiceSelected(2));
 
         videoPlayer.loopPointReached += OnVideoFinished;
         dialogueManager.OnLineFinished += HandleLineFinished;
     }
-
 
     void HandleLineFinished(string line)
     {
@@ -90,22 +93,45 @@ public class TriggerButtons : MonoBehaviour
         TryTrigger(line);
     }
 
-    void OnButtonClicked(string buttonText)
+   
+    void OnChoiceSelected(int buttonIndex)
     {
+        bool isBad = false;
+        string chosenText = "";
+
+        if (currentButtonTrigger != null)
+        {
+            if (buttonIndex == 1)
+            {
+                isBad = currentButtonTrigger.button1IsBad;
+                chosenText = currentButtonTrigger.button1Text;
+            }
+            else if (buttonIndex == 2)
+            {
+                isBad = currentButtonTrigger.button2IsBad;
+                chosenText = currentButtonTrigger.button2Text;
+            }
+        }
+
+        if (isBad && EndingCounter.instance != null)
+        {
+            EndingCounter.instance.AddBadChoice();
+            Debug.Log("Schlechte Entscheidung gewählt!");
+        }
+
         HideButtons();
 
         dialogueManager.inputLocked = false;
-        dialogueManager.choicesActive = false; 
+        dialogueManager.choicesActive = false;
 
         if (EventSystem.current != null)
             EventSystem.current.sendNavigationEvents = true;
 
-        if (TryTrigger(buttonText))
+        if (TryTrigger(chosenText))
             return;
 
         dialogueManager.ForceNextLine();
     }
-
 
     bool TryTrigger(string sourceText)
     {
@@ -131,7 +157,6 @@ public class TriggerButtons : MonoBehaviour
         return false;
     }
 
-
     IEnumerator ExecuteTrigger()
     {
         yield return new WaitForSeconds(0.1f);
@@ -149,7 +174,6 @@ public class TriggerButtons : MonoBehaviour
                 break;
         }
     }
-
 
     void PlayVideo(VideoClip clip)
     {
@@ -186,14 +210,15 @@ public class TriggerButtons : MonoBehaviour
         dialogueManager.ForceNextLine();
     }
 
-
     void ShowButtons(ButtonTrigger trigger)
     {
         buttonsActive = true;
         buttonsPanel.SetActive(true);
 
+        currentButtonTrigger = trigger; 
+
         dialogueManager.inputLocked = true;
-        dialogueManager.choicesActive = true; 
+        dialogueManager.choicesActive = true;
 
         if (EventSystem.current != null)
             EventSystem.current.sendNavigationEvents = false;

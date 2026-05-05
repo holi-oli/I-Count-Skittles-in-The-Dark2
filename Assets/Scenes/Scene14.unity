@@ -472,6 +472,51 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &360214067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 360214069}
+  - component: {fileID: 360214068}
+  m_Layer: 0
+  m_Name: EndingCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &360214068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360214067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb64dabe9ca9c42afd7ceda69a8961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badChoiceCount: 5
+--- !u!4 &360214069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360214067}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1059.2468, y: 659.0565, z: -0.6536758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &397322052
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,49 +642,63 @@ MonoBehaviour:
     action: 1
     buttonCount: 0
     button1Text: 
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: d0b074b645d15564b9bab5d56d1a3af2, type: 3}
   - triggerTexts:
     - "\u2026?"
     action: 0
     buttonCount: 1
     button1Text: (What are you talking about?)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - White is all I can see now.
     action: 0
     buttonCount: 2
     button1Text: (The rain just washed the colors away, come on)
+    button1IsBad: 1
     button2Text: (It will be fine.)
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - "\u2026!"
     action: 0
     buttonCount: 1
     button1Text: (They do still exist.)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - Where?
     action: 0
     buttonCount: 1
     button1Text: (Everywhere.)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - "It\u2019s all white, why?"
     action: 0
     buttonCount: 1
     button1Text: "(Look there\u2019s still one colored Skittle in the bag.)"
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: d0b074b645d15564b9bab5d56d1a3af2, type: 3}
   - triggerTexts:
     - What?..
     action: 1
     buttonCount: 1
     button1Text: 
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
 --- !u!4 &481451850
 Transform:
@@ -1952,3 +2011,4 @@ SceneRoots:
   - {fileID: 1110756929}
   - {fileID: 481451850}
   - {fileID: 1975473346}
+  - {fileID: 360214069}

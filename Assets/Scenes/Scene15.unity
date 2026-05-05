@@ -590,49 +590,63 @@ MonoBehaviour:
     action: 0
     buttonCount: 1
     button1Text: (So?...)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - (So?...)
     action: 0
     buttonCount: 1
     button1Text: (Eat it!)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "But it\u2019s the last one that\u2019s colored\u2026"
     action: 0
     buttonCount: 2
     button1Text: (So what?)
+    button1IsBad: 0
     button2Text: (You bought them, they are yours.)
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - ...??
     action: 0
     buttonCount: 1
     button1Text: (How do you feel?)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - Anxious.
     action: 0
     buttonCount: 1
     button1Text: (Then eat the Skittle.)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - (Then eat the Skittle.)
     action: 1
     buttonCount: 1
     button1Text: 
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
   - triggerTexts:
     - ...?
     action: 1
     buttonCount: 1
     button1Text: 
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
 --- !u!4 &481451850
 Transform:
@@ -1933,6 +1947,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2018795854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018795856}
+  - component: {fileID: 2018795855}
+  m_Layer: 0
+  m_Name: EndingCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2018795855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018795854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb64dabe9ca9c42afd7ceda69a8961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badChoiceCount: 0
+--- !u!4 &2018795856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018795854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1059.2468, y: 659.0565, z: -0.6536758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1945,3 +2004,4 @@ SceneRoots:
   - {fileID: 1110756929}
   - {fileID: 481451850}
   - {fileID: 1337247175}
+  - {fileID: 2018795856}

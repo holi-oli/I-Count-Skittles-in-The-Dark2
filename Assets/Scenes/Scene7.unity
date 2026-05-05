@@ -602,21 +602,27 @@ MonoBehaviour:
     action: 1
     buttonCount: 0
     button1Text: 
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 5d78dce4f8c2b5b4097253eea1b63754, type: 3}
   - triggerTexts:
     - "\"But I don\u2019t have anything else\u2026\u201D"
     action: 0
     buttonCount: 1
     button1Text: (Hey.)
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - "\"What?\u201C"
     action: 0
     buttonCount: 2
     button1Text: (You are pathetic.)
+    button1IsBad: 1
     button2Text: (Pay for the Skittles.)
+    button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
     - About two days have passed before he nodded satisfactorily and put a cash in
@@ -624,7 +630,9 @@ MonoBehaviour:
     action: 1
     buttonCount: 2
     button1Text: 
+    button1IsBad: 0
     button2Text: 
+    button2IsBad: 0
     videoClip: {fileID: 32900000, guid: 5d78dce4f8c2b5b4097253eea1b63754, type: 3}
 --- !u!4 &481451850
 Transform:
@@ -1687,6 +1695,51 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1564414743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564414745}
+  - component: {fileID: 1564414744}
+  m_Layer: 0
+  m_Name: EndingCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1564414744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564414743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb64dabe9ca9c42afd7ceda69a8961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badChoiceCount: 0
+--- !u!4 &1564414745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564414743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1059.2468, y: 659.0565, z: -0.6536758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1702762901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,3 +2119,4 @@ SceneRoots:
   - {fileID: 481451850}
   - {fileID: 737477131}
   - {fileID: 1953103334}
+  - {fileID: 1564414745}
