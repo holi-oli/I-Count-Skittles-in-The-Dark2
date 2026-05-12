@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7033724829603632835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8817867752203235460}
+  - component: {fileID: 7030871405492356661}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8817867752203235460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7033724829603632835}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 285.5174, y: 1219.668, z: -16.260508}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7030871405492356661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7033724829603632835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac7b9e109c9807348b8682e935d66cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicList:
+  - sceneName: Scene1
+    music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+  - sceneName: Scene2
+    music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+  - sceneName: Scene3
+    music: {fileID: 8300000, guid: 1944a78b6fe866f4788ca675122af51f, type: 3}
+  - sceneName: Scene4
+    music: {fileID: 8300000, guid: cdc60cf386473134ba2771dfcf49fa21, type: 3}
+  - sceneName: Scene4.5
+    music: {fileID: 8300000, guid: f3fa59635e44e7d4cafa5e7df357ad89, type: 3}
+  - sceneName: Scene5
+    music: {fileID: 8300000, guid: 1944a78b6fe866f4788ca675122af51f, type: 3}
+  - sceneName: Scene6
+    music: {fileID: 8300000, guid: 1b6dfa346ba952a4683561fc0cf1310b, type: 3}
+  - sceneName: Scene7
+    music: {fileID: 8300000, guid: 3cfcedd765d1a654d99bc5adc06b64d3, type: 3}
+  - sceneName: Scene8
+    music: {fileID: 8300000, guid: 32bd4b9d920ddd946b2f72fc2ed84f79, type: 3}
+  - sceneName: Scene9
+    music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+  - sceneName: Scene10
+    music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+  - sceneName: Scene10.5
+    music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+  - sceneName: Scene10.5
+    music: {fileID: 0}
+  - sceneName: Scene11
+    music: {fileID: 0}
+  - sceneName: Scene11.5
+    music: {fileID: 0}
+  - sceneName: Scene12
+    music: {fileID: 0}
+  - sceneName: Scene12.2
+    music: {fileID: 0}
+  - sceneName: Scene12.5
+    music: {fileID: 0}
+  - sceneName: Scene13
+    music: {fileID: 0}
+  - sceneName: Scene14
+    music: {fileID: 0}
+  - sceneName: Scene15
+    music: {fileID: 0}
+  - sceneName: Scene16
+    music: {fileID: 0}
+  - sceneName: Scene16.2
+    music: {fileID: 0}
+  - sceneName: Scene16.5
+    music: {fileID: 0}
+  - sceneName: Scene17
+    music: {fileID: 0}
+  - sceneName: Scene18
+    music: {fileID: 0}
+  fadeDuration: 2
+  volume: 1
