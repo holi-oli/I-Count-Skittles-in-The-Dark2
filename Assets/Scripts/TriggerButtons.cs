@@ -33,10 +33,10 @@ public class TriggerButtons : MonoBehaviour
         public ButtonCount buttonCount = ButtonCount.One;
 
         public string button1Text;
-        public bool button1IsBad; 
+        public bool button1IsBad;
 
         public string button2Text;
-        public bool button2IsBad; 
+        public bool button2IsBad;
 
         [Header("Video (nur bei PlayVideo)")]
         public VideoClip videoClip;
@@ -69,7 +69,7 @@ public class TriggerButtons : MonoBehaviour
     private bool buttonsActive;
     private Coroutine triggerCoroutine;
     private ButtonTrigger pendingTrigger;
-    private ButtonTrigger currentButtonTrigger; 
+    private ButtonTrigger currentButtonTrigger;
 
     void Start()
     {
@@ -79,7 +79,7 @@ public class TriggerButtons : MonoBehaviour
         if (videoPanel != null)
             videoPanel.SetActive(false);
 
-        
+
         button1.onClick.AddListener(() => OnChoiceSelected(1));
         button2.onClick.AddListener(() => OnChoiceSelected(2));
 
@@ -93,7 +93,7 @@ public class TriggerButtons : MonoBehaviour
         TryTrigger(line);
     }
 
-   
+
     void OnChoiceSelected(int buttonIndex)
     {
         bool isBad = false;
@@ -215,7 +215,7 @@ public class TriggerButtons : MonoBehaviour
         buttonsActive = true;
         buttonsPanel.SetActive(true);
 
-        currentButtonTrigger = trigger; 
+        currentButtonTrigger = trigger;
 
         dialogueManager.inputLocked = true;
         dialogueManager.choicesActive = true;

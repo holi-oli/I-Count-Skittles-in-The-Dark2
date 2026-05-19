@@ -38,9 +38,7 @@ public class MusicManager : MonoBehaviour
 
     void Awake()
     {
-        // =========================
-        // SINGLETON
-        // =========================
+        
 
         if (instance != null)
         {
@@ -52,9 +50,7 @@ public class MusicManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        // =========================
-        // VOLUME LADEN
-        // =========================
+       
 
         masterVolume =
             PlayerPrefs.GetFloat(
@@ -69,9 +65,7 @@ public class MusicManager : MonoBehaviour
                 1f
             );
 
-        // =========================
-        // AUDIO SOURCES
-        // =========================
+     
 
         GameObject goA =
             new GameObject("Music_A");
@@ -90,9 +84,7 @@ public class MusicManager : MonoBehaviour
 
         active = a;
 
-        // =========================
-        // MAP ERSTELLEN
-        // =========================
+        
 
         BuildMap();
 
@@ -115,7 +107,7 @@ public class MusicManager : MonoBehaviour
 
         source.playOnAwake = false;
 
-        // 2D Sound
+       
         source.spatialBlend = 0f;
 
         source.volume = 0f;
@@ -183,7 +175,6 @@ public class MusicManager : MonoBehaviour
         if (clip == null)
             return;
 
-        // Bereits dieselbe Musik?
         if (
             active != null &&
             active.clip == clip &&
@@ -241,7 +232,7 @@ public class MusicManager : MonoBehaviour
             float f =
                 t / fadeDuration;
 
-            // Neue Musik reinfaden
+            
             next.volume =
                 Mathf.Lerp(
                     0f,
@@ -249,7 +240,7 @@ public class MusicManager : MonoBehaviour
                     f
                 );
 
-            // Alte Musik rausfaden
+            
             if (
                 old != null &&
                 old.isPlaying
@@ -277,9 +268,7 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-    // =========================
-    // SETTINGS VOLUME
-    // =========================
+   
 
     public void SetVolume(float volume)
     {
@@ -297,9 +286,7 @@ public class MusicManager : MonoBehaviour
 
         PlayerPrefs.Save();
 
-        // WICHTIG:
-        // Nur aktive Musik ändern
-        // Crossfade bleibt intakt
+       
         if (active != null)
         {
             active.volume =

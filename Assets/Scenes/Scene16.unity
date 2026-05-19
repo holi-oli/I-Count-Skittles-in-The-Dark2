@@ -1676,7 +1676,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932385444}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 70439f3edeb086143b3a22498ae87af4, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1697,9 +1697,9 @@ VideoPlayer:
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
+  m_SkipOnDrop: 0
   m_Looping: 0
-  m_WaitForFirstFrame: 0
+  m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
 --- !u!1 &1076268710
@@ -2072,7 +2072,7 @@ MonoBehaviour:
   triggerTexts:
   - ...
   scenesToLoad:
-  - Scene16.2
+  - Scene16.1
   exactMatch: 0
   endGameTriggerTexts: []
   endGameDelay: 2

@@ -28,27 +28,22 @@ public class SettingsManager : MonoBehaviour
     private float musicVolume;
     private float sfxVolume;
 
-    // Verhindert Weiterklicks
+    
     private bool blockInput = false;
 
     void Start()
     {
-        // =========================
-        // SETTINGS PANEL
-        // =========================
+       
 
         if (settingsPanel != null)
         {
             settingsPanel.SetActive(false);
         }
 
-        // Sicherheitshalber
+       
         Time.timeScale = 1f;
 
-        // =========================
-        // AUDIO SETTINGS LADEN
-        // =========================
-
+       
         musicVolume =
             PlayerPrefs.GetFloat(
                 "MusicVolume",
@@ -61,9 +56,7 @@ public class SettingsManager : MonoBehaviour
                 DEFAULT_VOLUME
             );
 
-        // =========================
-        // MUSIC SLIDER
-        // =========================
+       
 
         if (musicSlider != null)
         {
@@ -79,9 +72,7 @@ public class SettingsManager : MonoBehaviour
                 );
         }
 
-        // =========================
-        // SFX SLIDER
-        // =========================
+       
 
         if (sfxSlider != null)
         {
@@ -97,9 +88,7 @@ public class SettingsManager : MonoBehaviour
                 );
         }
 
-        // =========================
-        // FULLSCREEN
-        // =========================
+        
 
         bool fullscreen =
             PlayerPrefs.GetInt(
@@ -124,9 +113,7 @@ public class SettingsManager : MonoBehaviour
                 );
         }
 
-        // =========================
-        // STARTWERTE ANWENDEN
-        // =========================
+        
 
         ApplyMusicVolume();
         ApplySFXVolume();
@@ -134,11 +121,11 @@ public class SettingsManager : MonoBehaviour
 
     void Update()
     {
-        // Input blockiert?
+       
         if (blockInput)
             return;
 
-        // ESC öffnet/schließt Menü
+        
         if (
             Input.GetKeyDown(
                 KeyCode.Escape
@@ -149,9 +136,7 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
-    // =========================
-    // SETTINGS PANEL
-    // =========================
+   
 
     public void ToggleSettings()
     {
@@ -172,7 +157,7 @@ public class SettingsManager : MonoBehaviour
             ResumeGame();
         }
 
-        // Klick blockieren
+       
         StartCoroutine(BlockClick());
     }
 
@@ -200,28 +185,24 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
-    // =========================
-    // INPUT BLOCK
-    // =========================
+    
 
     IEnumerator BlockClick()
     {
         blockInput = true;
 
-        // Warten bis Maus losgelassen
+        
         yield return new WaitUntil(
             () => !Input.GetMouseButton(0)
         );
 
-        // Extra Sicherheitsframe
+        
         yield return null;
 
         blockInput = false;
     }
 
-    // =========================
-    // GAME PAUSE
-    // =========================
+   
 
     void PauseGame()
     {
@@ -233,9 +214,7 @@ public class SettingsManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    // =========================
-    // MUSIC
-    // =========================
+   
 
     public void SetMusicVolume(
         float volume
@@ -263,9 +242,7 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
-    // =========================
-    // SFX
-    // =========================
+   
 
     public void SetSFXVolume(
         float volume
@@ -298,9 +275,7 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
-    // =========================
-    // FULLSCREEN
-    // =========================
+   
 
     public void SetFullscreen(
         bool fullscreen
@@ -317,10 +292,7 @@ public class SettingsManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    // =========================
-    // OPTIONAL:
-    // SFX SOURCE HINZUFÜGEN
-    // =========================
+   
 
     public void AddSFXSource(
         AudioSource source
@@ -340,11 +312,7 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
-    // =========================
-    // OPTIONAL:
-    // SFX SOURCE ENTFERNEN
-    // =========================
-
+   
     public void RemoveSFXSource(
         AudioSource source
     )
@@ -362,11 +330,7 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
-    // =========================
-    // OPTIONAL:
-    // UI BLOCKT DIALOG INPUT
-    // =========================
-
+   
     public bool IsPointerOverUI()
     {
         return EventSystem.current

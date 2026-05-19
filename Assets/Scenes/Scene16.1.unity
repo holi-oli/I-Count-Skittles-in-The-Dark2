@@ -547,7 +547,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842372462}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bfadb83a91b5f1246ac3aa432f3dae26, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 70439f3edeb086143b3a22498ae87af4, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 842372464}
-  goodEndingVideo: {fileID: 32900000, guid: 6137ebb6c92432946875d47137ce2f5a, type: 3}
+  goodEndingVideo: {fileID: 32900000, guid: 70439f3edeb086143b3a22498ae87af4, type: 3}
   badEndingVideo: {fileID: 32900000, guid: 817b0754928bb8f4b9a560c201bff233, type: 3}
   badEndingThreshold: 5
 --- !u!4 &1497433848
@@ -1444,7 +1444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4829611490185240858, guid: 83c95e741567ac642a1f3b4e71ef059f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4829611490185240858, guid: 83c95e741567ac642a1f3b4e71ef059f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1601,6 +1601,7 @@ MonoBehaviour:
   - Scene14
   - Scene15
   - Scene16
+  - Scene16.1
   - Scene16.2
   - Scene16.5
   - Scene17
