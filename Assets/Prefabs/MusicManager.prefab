@@ -47,55 +47,78 @@ MonoBehaviour:
   musicList:
   - sceneName: Scene1
     music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene2
     music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene3
     music: {fileID: 8300000, guid: 1944a78b6fe866f4788ca675122af51f, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene4
     music: {fileID: 8300000, guid: cdc60cf386473134ba2771dfcf49fa21, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene4.5
     music: {fileID: 8300000, guid: f3fa59635e44e7d4cafa5e7df357ad89, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene5
     music: {fileID: 8300000, guid: 1944a78b6fe866f4788ca675122af51f, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene6
     music: {fileID: 8300000, guid: 1b6dfa346ba952a4683561fc0cf1310b, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene7
     music: {fileID: 8300000, guid: 3cfcedd765d1a654d99bc5adc06b64d3, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene8
     music: {fileID: 8300000, guid: 32bd4b9d920ddd946b2f72fc2ed84f79, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene9
-    music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+    music: {fileID: 8300000, guid: 6ca2972fe7a49214cb6d013e3ad020d9, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene10
-    music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
+    music: {fileID: 8300000, guid: 32bd4b9d920ddd946b2f72fc2ed84f79, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene10.5
-    music: {fileID: 8300000, guid: 1e4b04861e8762e43baccdc4dba5b699, type: 3}
-  - sceneName: Scene10.5
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 32bd4b9d920ddd946b2f72fc2ed84f79, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene11
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 32bd4b9d920ddd946b2f72fc2ed84f79, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene11.5
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 32bd4b9d920ddd946b2f72fc2ed84f79, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene12
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 32bd4b9d920ddd946b2f72fc2ed84f79, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene12.2
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 4eaef89c858aedc4d88bc6db0498672e, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene12.5
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 823e33f78cd1ef441800f34f7b6299f6, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene13
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 823e33f78cd1ef441800f34f7b6299f6, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene14
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 823e33f78cd1ef441800f34f7b6299f6, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene15
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 50c8cd770dc203345a683e0606ff2f93, type: 3}
+    volumeMultiplier: 1
   - sceneName: Scene16
     music: {fileID: 0}
+    volumeMultiplier: 1
   - sceneName: Scene16.2
     music: {fileID: 0}
+    volumeMultiplier: 1
   - sceneName: Scene16.5
     music: {fileID: 0}
+    volumeMultiplier: 1
   - sceneName: Scene17
     music: {fileID: 0}
+    volumeMultiplier: 1
   - sceneName: Scene18
     music: {fileID: 0}
+    volumeMultiplier: 1
   fadeDuration: 2
-  volume: 1
+  masterVolume: 1
