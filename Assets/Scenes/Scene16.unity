@@ -2072,7 +2072,7 @@ MonoBehaviour:
   triggerTexts:
   - ...
   scenesToLoad:
-  - Scene16.1
+  - Scene16.2
   exactMatch: 0
   endGameTriggerTexts: []
   endGameDelay: 2

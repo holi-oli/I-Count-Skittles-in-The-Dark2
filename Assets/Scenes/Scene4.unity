@@ -683,7 +683,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\u201CExcuse me, what?\u201D"
     action: 1
@@ -692,7 +692,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\"X.\u201C"
     action: 0
@@ -701,7 +701,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "(You\u2019d better not to do it\u2026)"
     action: 0
@@ -711,7 +711,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\u201CWhat?\u201D"
     action: 1
@@ -720,7 +720,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\"X!\u201C"
     action: 0
@@ -729,7 +729,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\"He\u2019s trying to scare me. But how does he know I\u2019m terrified  by
       the letter \u201CX\u201D?\u201D"
@@ -1296,7 +1296,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932385444}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 519420031}

@@ -810,15 +810,6 @@ MonoBehaviour:
   delayBeforeButtons: 2
   triggers:
   - triggerTexts:
-    - '"..."'
-    action: 1
-    buttonCount: 0
-    button1Text: 
-    button1IsBad: 0
-    button2Text: 
-    button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: d0b074b645d15564b9bab5d56d1a3af2, type: 3}
-  - triggerTexts:
     - "\u2026?"
     action: 0
     buttonCount: 1
@@ -1428,7 +1419,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932385444}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9a33ee3ca2cfd234d9cf507b095c9e77, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: b1836fdb1e9e0fa47ad3fc0654391243, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1689,7 +1680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a1eb0260e7b84a14d9bf0526a6367976, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6167ecf8b500d554ca934bc9b6d62905, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

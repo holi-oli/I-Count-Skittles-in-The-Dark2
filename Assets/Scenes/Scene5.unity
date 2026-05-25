@@ -284,7 +284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: b882802296b23394f9641a17e8c4efad, type: 2}
+  m_Texture: {fileID: 8400000, guid: 4605644b572c76945960635ddd9bd361, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -598,7 +598,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\"X?\u201C"
     action: 1
@@ -607,7 +607,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\u201CX!\u201D"
     action: 1
@@ -616,7 +616,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - My interlocutor shook and crawled.
     action: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "(You just repeated after him\u2026)"
     action: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\u201CWait! I said that he crawled. But did he\u2026 really crawl? Cause I
       didn\u2019t even look in his direction.\u201D"
@@ -644,7 +644,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 6c8f750f56b8072499ff88a3282e3084, type: 3}
+    videoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   - triggerTexts:
     - "\u201CYeah, just now!\u201D"
     action: 0
@@ -1325,11 +1325,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932385444}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 0ed3103f38380ea42a8c0b61a0041a91, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: b882802296b23394f9641a17e8c4efad, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 4605644b572c76945960635ddd9bd361, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>

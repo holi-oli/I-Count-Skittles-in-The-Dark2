@@ -720,7 +720,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 5d78dce4f8c2b5b4097253eea1b63754, type: 3}
+    videoClip: {fileID: 32900000, guid: 7b5d898ba7f17904d9c0db79d11d2d27, type: 3}
   - triggerTexts:
     - "\"But I don\u2019t have anything else\u2026\u201D"
     action: 0
@@ -748,7 +748,7 @@ MonoBehaviour:
     button1IsBad: 0
     button2Text: 
     button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 5d78dce4f8c2b5b4097253eea1b63754, type: 3}
+    videoClip: {fileID: 32900000, guid: 7b5d898ba7f17904d9c0db79d11d2d27, type: 3}
 --- !u!4 &481451850
 Transform:
   m_ObjectHideFlags: 0
@@ -1880,7 +1880,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09dd14a85e51d224abb380293c4da9c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1cb3e8858149b74458ecaccfe2e32d46, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

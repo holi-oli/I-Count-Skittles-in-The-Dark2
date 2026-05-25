@@ -636,15 +636,6 @@ MonoBehaviour:
     button2IsBad: 0
     videoClip: {fileID: 0}
   - triggerTexts:
-    - (Then eat the Skittle.)
-    action: 1
-    buttonCount: 1
-    button1Text: 
-    button1IsBad: 0
-    button2Text: 
-    button2IsBad: 0
-    videoClip: {fileID: 32900000, guid: 68a3f2e4619df2b45ab2ad0b2ec1cb7a, type: 3}
-  - triggerTexts:
     - ...?
     action: 1
     buttonCount: 1
@@ -1540,7 +1531,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0803385f3c3bf8541b1fabdfe3dbcd9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa84cef25bc820942b81c266ce74cfd1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2203,7 +2194,7 @@ MonoBehaviour:
   triggerTexts:
   - ...!
   scenesToLoad:
-  - Scene16
+  - Scene15.5
   exactMatch: 0
   endGameTriggerTexts: []
   endGameDelay: 2
